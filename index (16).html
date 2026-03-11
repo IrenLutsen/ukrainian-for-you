@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ukrainian for You — Ukrainian language for children abroad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --blue:#15a2f9;
+  --blue-dk:#0e86d4;
+  --blue-lt:#c4e5ff;
+  --blue-pale:#eaf5ff;
+  --yellow:#fffb9d;
+  --yellow-dk:#f5e800;
+  --navy:#0a2a45;
+  --navy2:#0d3358;
+  --white:#ffffff;
+  --cream:#f4faff;
+  --soft:#e4f2fd;
+  --muted:#4e6e88;
+  --text:#0e2236;
+  --border:#b8dcf7;
+  --green:#22c55e;
+  --orange:#f97316;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Mulish',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;}
+h1,h2,h3,.logo-name{font-family:'Raleway',sans-serif;}
+
+/* ══ HEADER ══ */
+header{
+  position:fixed;top:0;left:0;width:100%;z-index:300;
+  background:#15a2f9;
+  border-bottom:3px solid var(--yellow);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 4%;height:70px;
+  box-shadow:0 4px 24px rgba(21,162,249,.35);
+}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo-badge{
+  background:var(--yellow);border-radius:10px;padding:5px 11px;
+  font-family:'Raleway',sans-serif;font-weight:900;font-size:13px;color:var(--navy);
+  white-space:nowrap;letter-spacing:.3px;
+}
+.logo-sub{font-size:9px;color:rgba(255,255,255,.85);text-transform:uppercase;letter-spacing:2px;margin-top:2px;}
+.logo-wrap{display:flex;flex-direction:column;}
+
+nav{display:flex;gap:20px;align-items:center;}
+nav a{color:rgba(255,255,255,.92);text-decoration:none;font-size:12.5px;font-weight:700;transition:color .2s;white-space:nowrap;}
+nav a:hover{color:var(--yellow);}
+
+.lang-switcher{display:flex;gap:4px;align-items:center;margin-left:8px;}
+.lang-btn{
+  background:rgba(255,255,255,.18);border:1.5px solid rgba(255,255,255,.35);
+  color:#fff;border-radius:6px;padding:4px 9px;font-size:11px;font-weight:800;
+  cursor:pointer;transition:all .2s;letter-spacing:.5px;
+}
+.lang-btn.active,.lang-btn:hover{background:var(--yellow);color:var(--navy);border-color:var(--yellow);}
+
+.btn-header{
+  background:var(--yellow);color:var(--navy);border:none;
+  padding:9px 20px;border-radius:50px;font-family:'Raleway',sans-serif;
+  font-size:12px;font-weight:900;cursor:pointer;transition:all .2s;
+  text-decoration:none;white-space:nowrap;
+  box-shadow:0 3px 12px rgba(0,0,0,.15);
+}
+.btn-header:hover{background:#fff;transform:translateY(-1px);}
+
+/* ══ HERO ══ */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(150deg,#0a2a45 0%,#0d3a5e 50%,#0e4880 100%);
+  padding:90px 4% 60px;display:flex;align-items:center;
+  position:relative;overflow:hidden;
+}
+.hero-grid{width:700px;height:700px;border-radius:50%;background:rgba(21,162,249,.06);position:absolute;top:-200px;right:-150px;}
+.hero-grid2{width:400px;height:400px;border-radius:50%;background:rgba(21,162,249,.05);position:absolute;bottom:-100px;left:-80px;}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(21,162,249,.08) 1.5px,transparent 1.5px);background-size:40px 40px;}
+
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;width:100%;}
+
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,251,157,.15);border:1px solid rgba(255,251,157,.35);
+  color:var(--yellow);padding:7px 16px;border-radius:50px;
+  font-size:11.5px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;
+  margin-bottom:22px;animation:sD .6s ease both;
+}
+.hero h1{font-size:clamp(1.9rem,4.2vw,3.4rem);font-weight:900;color:#fff;line-height:1.13;margin-bottom:20px;animation:sU .75s ease both;}
+.hero h1 em{color:var(--yellow);font-style:normal;}
+.hero-desc{font-size:16.5px;color:rgba(255,255,255,.78);line-height:1.74;margin-bottom:34px;max-width:510px;animation:sU .9s ease both;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;animation:sU 1s ease both;}
+
+.btn-p{background:var(--yellow);color:var(--navy);border:none;padding:14px 32px;border-radius:50px;font-family:'Raleway',sans-serif;font-size:14px;font-weight:900;cursor:pointer;transition:all .25s;text-decoration:none;display:inline-block;box-shadow:0 8px 24px rgba(255,251,157,.4);}
+.btn-p:hover{background:#fff;transform:translateY(-3px);box-shadow:0 14px 36px rgba(255,251,157,.5);}
+.btn-g{background:rgba(255,255,255,.09);color:#fff;border:1.5px solid rgba(255,255,255,.3);padding:14px 26px;border-radius:50px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:all .25s;text-decoration:none;display:inline-block;}
+.btn-g:hover{background:rgba(255,255,255,.18);transform:translateY(-2px);}
+
+/* hero photo grid */
+.hero-photos{position:relative;height:500px;}
+.pc{position:absolute;border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.45);border:3px solid rgba(255,255,255,.1);transition:transform .3s;}
+.pc:hover{transform:scale(1.03);}
+.pc img{width:100%;height:100%;object-fit:cover;display:block;}
+.pc1{width:250px;height:195px;top:0;left:20px;}
+.pc2{width:190px;height:250px;top:16px;right:0;}
+.pc3{width:290px;height:190px;bottom:45px;left:0;}
+.pc4{width:190px;height:175px;bottom:0;right:24px;}
+.hero-float{
+  position:absolute;bottom:175px;right:130px;z-index:10;
+  background:var(--yellow);border-radius:14px;padding:12px 16px;
+  box-shadow:0 10px 32px rgba(255,251,157,.5);animation:fl 3s ease-in-out infinite;
+}
+.hero-float strong{font-family:'Raleway',sans-serif;font-size:13px;font-weight:900;color:var(--navy);display:block;}
+.hero-float span{font-size:10px;color:rgba(10,42,69,.65);}
+
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes sU{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes sD{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+
+/* ══ CONTACT BAR ══ */
+.cbar{background:var(--yellow);padding:11px 4%;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;}
+.citem{display:flex;align-items:center;gap:9px;font-family:'Raleway',sans-serif;font-size:12.5px;font-weight:800;color:var(--navy);text-decoration:none;transition:opacity .2s;}
+.citem:hover{opacity:.7;}
+.cion{width:32px;height:32px;border-radius:9px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.cion svg{width:16px;height:16px;fill:var(--yellow);}
+
+/* ══ GENERIC SECTION ══ */
+section{padding:84px 4%;}
+.tag{display:inline-block;background:rgba(21,162,249,.1);color:var(--blue-dk);border:1px solid rgba(21,162,249,.25);padding:5px 15px;border-radius:50px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:15px;}
+.tag.lt{background:rgba(255,251,157,.2);color:var(--yellow);border-color:rgba(255,251,157,.3);}
+.tag.org{background:rgba(255,115,22,.1);color:var(--orange);border-color:rgba(255,115,22,.25);}
+.stitle{font-size:clamp(1.55rem,3vw,2.5rem);font-weight:900;color:var(--navy);line-height:1.15;margin-bottom:13px;}
+.stitle em{color:var(--blue);font-style:normal;}
+.stitle.wh{color:#fff;}
+.stitle.wh em{color:var(--yellow);}
+.ssub{font-size:15.5px;color:var(--muted);line-height:1.72;max-width:600px;}
+.ssub.wh{color:rgba(255,255,255,.72);}
+.shead{margin-bottom:50px;}
+.shead.c{text-align:center;}
+.shead.c .ssub{margin:0 auto;}
+
+/* ══ MISSION ══ */
+.mission{background:var(--white);}
+.mission-g{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.illus{position:relative;}
+.illus-main{border-radius:26px;overflow:hidden;box-shadow:0 22px 60px rgba(21,162,249,.16);height:400px;}
+.illus-main img{width:100%;height:100%;object-fit:cover;}
+.illus-badge{position:absolute;bottom:-20px;right:-20px;background:var(--blue);border-radius:16px;padding:16px 20px;box-shadow:0 10px 32px rgba(21,162,249,.4);color:#fff;}
+.illus-badge strong{font-family:'Raleway',sans-serif;font-size:22px;font-weight:900;display:block;color:var(--yellow);}
+.illus-badge span{font-size:11px;opacity:.8;}
+.vals{display:flex;flex-direction:column;gap:20px;margin-top:30px;}
+.vrow{display:flex;gap:15px;align-items:flex-start;}
+.vicon{width:48px;height:48px;border-radius:13px;flex-shrink:0;background:var(--blue-pale);border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;}
+.vicon svg{width:22px;height:22px;fill:var(--blue);}
+.vtext h4{font-weight:800;font-size:14.5px;margin-bottom:3px;color:var(--navy);}
+.vtext p{font-size:13px;color:var(--muted);line-height:1.58;}
+
+/* ══ HOW IT WORKS ══ */
+.how{background:var(--cream);}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.step{
+  background:var(--white);border-radius:20px;padding:28px 22px;
+  border:2px solid var(--border);text-align:center;transition:all .3s;position:relative;
+}
+.step:hover{border-color:var(--blue);transform:translateY(-5px);box-shadow:0 16px 44px rgba(21,162,249,.11);}
+.step::after{content:'→';position:absolute;right:-16px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--blue-lt);z-index:1;}
+.step:last-child::after{display:none;}
+.step-num{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue-dk));color:#fff;font-family:'Raleway',sans-serif;font-size:19px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 5px 18px rgba(21,162,249,.35);}
+.step-icon-wrap{width:72px;height:72px;border-radius:18px;background:var(--blue-pale);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+.step-icon-wrap svg{width:34px;height:34px;fill:var(--blue);}
+.step h3{font-family:'Raleway',sans-serif;font-size:14px;font-weight:800;color:var(--navy);margin-bottom:7px;}
+.step p{font-size:12.5px;color:var(--muted);line-height:1.58;}
+
+/* ══ PLATFORM ══ */
+.platform{background:var(--navy);}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px;}
+.feat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:17px;padding:24px 20px;transition:all .3s;}
+.feat:hover{background:rgba(255,255,255,.11);transform:translateY(-4px);}
+.ficon{width:46px;height:46px;border-radius:13px;background:rgba(21,162,249,.18);border:1px solid rgba(21,162,249,.28);display:flex;align-items:center;justify-content:center;margin-bottom:13px;}
+.ficon svg{width:22px;height:22px;fill:var(--blue);}
+.feat h3{color:var(--yellow);font-family:'Raleway',sans-serif;font-size:13px;font-weight:800;margin-bottom:7px;line-height:1.3;}
+.feat p{color:rgba(255,255,255,.62);font-size:12.5px;line-height:1.58;}
+
+/* ══ OFFLINE+ONLINE MODEL ══ */
+.model{background:var(--white);}
+.model-g{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+.model-photo{border-radius:22px;overflow:hidden;height:360px;box-shadow:0 18px 50px rgba(21,162,249,.14);}
+.model-photo img{width:100%;height:100%;object-fit:cover;}
+.model-opts{display:flex;flex-direction:column;gap:16px;}
+.mopt{
+  border-radius:16px;padding:20px 22px;
+  display:flex;gap:14px;align-items:flex-start;
+  border:1.5px solid var(--border);transition:all .25s;
+}
+.mopt:hover{border-color:var(--blue);background:var(--blue-pale);}
+.mopt-ico{width:42px;height:42px;border-radius:11px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.mopt-ico svg{width:22px;height:22px;}
+.mopt.o1 .mopt-ico{background:rgba(21,162,249,.12);}
+.mopt.o1 .mopt-ico svg{fill:var(--blue);}
+.mopt.o2 .mopt-ico{background:rgba(34,197,94,.1);}
+.mopt.o2 .mopt-ico svg{fill:var(--green);}
+.mopt.o3 .mopt-ico{background:rgba(249,115,22,.1);}
+.mopt.o3 .mopt-ico svg{fill:var(--orange);}
+.mopt.o4 .mopt-ico{background:rgba(168,85,247,.1);}
+.mopt.o4 .mopt-ico svg{fill:#a855f7;}
+.mopt h4{font-family:'Raleway',sans-serif;font-size:13.5px;font-weight:900;color:var(--navy);margin-bottom:4px;}
+.mopt p{font-size:12.5px;color:var(--muted);line-height:1.58;}
+
+/* ══ PRICING ══ */
+.pricing{background:var(--soft);}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:840px;margin:0 auto;}
+.plan{background:var(--white);border-radius:24px;padding:38px 32px;border:2px solid var(--border);position:relative;transition:all .3s;}
+.plan:hover{transform:translateY(-5px);box-shadow:0 22px 55px rgba(21,162,249,.13);}
+.plan.hot{background:linear-gradient(155deg,var(--navy) 0%,#0d3a5e 100%);border-color:var(--blue);box-shadow:0 18px 55px rgba(21,162,249,.28);}
+.plan-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--yellow);color:var(--navy);padding:5px 17px;border-radius:50px;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:900;white-space:nowrap;}
+.plan-irow{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.plan-ico{width:50px;height:50px;border-radius:14px;overflow:hidden;flex-shrink:0;}
+.plan-ico img{width:100%;height:100%;object-fit:cover;}
+.plan-lbl{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:2px;}
+.plan.hot .plan-lbl{color:rgba(255,255,255,.55);}
+.plan-name{font-family:'Raleway',sans-serif;font-size:18px;font-weight:900;color:var(--navy);}
+.plan.hot .plan-name{color:var(--yellow);}
+.plan-desc{font-size:13px;color:var(--muted);line-height:1.58;margin-bottom:18px;}
+.plan.hot .plan-desc{color:rgba(255,255,255,.65);}
+.plan-price{margin-bottom:4px;}
+.plan-price strong{font-family:'Raleway',sans-serif;font-size:46px;font-weight:900;color:var(--blue);}
+.plan.hot .plan-price strong{color:var(--yellow);}
+.plan-price span{font-size:15px;color:var(--muted);}
+.plan.hot .plan-price span{color:rgba(255,255,255,.45);}
+.plan-calc{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(21,162,249,.08);border:1px solid rgba(21,162,249,.2);
+  border-radius:8px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--blue-dk);
+  margin-bottom:6px;
+}
+.plan.hot .plan-calc{background:rgba(255,251,157,.1);border-color:rgba(255,251,157,.25);color:rgba(255,251,157,.85);}
+.plan-period{font-size:12.5px;color:var(--muted);margin-bottom:22px;}
+.plan.hot .plan-period{color:rgba(255,255,255,.45);}
+.plan-hr{height:1px;background:var(--border);margin-bottom:20px;}
+.plan.hot .plan-hr{background:rgba(255,255,255,.12);}
+.plan-feats{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.plan-feats li{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;line-height:1.5;}
+.plan.hot .plan-feats li{color:rgba(255,255,255,.82);}
+.chk{width:20px;height:20px;border-radius:6px;background:rgba(34,197,94,.12);flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;}
+.chk svg{width:11px;height:11px;fill:var(--green);}
+.plan.hot .chk{background:rgba(255,251,157,.14);}
+.plan.hot .chk svg{fill:var(--yellow);}
+.btn-plan{width:100%;padding:14px;border-radius:50px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:900;cursor:pointer;transition:all .25s;text-decoration:none;display:block;text-align:center;border:none;}
+.bpo{background:transparent;border:2px solid var(--blue);color:var(--blue);}
+.bpo:hover{background:var(--blue);color:#fff;}
+.bpf{background:var(--yellow);color:var(--navy);box-shadow:0 7px 24px rgba(255,251,157,.38);}
+.bpf:hover{background:#fff;color:var(--navy);}
+.plan-note{text-align:center;font-size:11.5px;color:var(--muted);margin-top:9px;}
+.plan.hot .plan-note{color:rgba(255,255,255,.38);}
+
+/* auto-subscription box */
+.autosub{
+  background:var(--white);border-radius:18px;padding:22px 26px;
+  border:2px solid var(--border);margin-top:28px;max-width:840px;margin-left:auto;margin-right:auto;
+  display:flex;gap:18px;align-items:flex-start;
+}
+.autosub-ico{width:44px;height:44px;border-radius:12px;background:rgba(21,162,249,.1);border:1.5px solid rgba(21,162,249,.2);flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.autosub-ico svg{width:22px;height:22px;fill:var(--blue);}
+.autosub h4{font-family:'Raleway',sans-serif;font-size:14px;font-weight:900;color:var(--navy);margin-bottom:5px;}
+.autosub p{font-size:13px;color:var(--muted);line-height:1.6;}
+
+.pay-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;max-width:840px;margin-left:auto;margin-right:auto;}
+.pchip{display:inline-flex;align-items:center;gap:6px;background:var(--white);border:1.5px solid var(--border);border-radius:50px;padding:7px 15px;font-size:12px;font-weight:700;color:var(--navy);text-decoration:none;transition:all .2s;}
+.pchip:hover{background:var(--blue-pale);border-color:var(--blue);}
+.pchip svg{width:14px;height:14px;}
+
+/* ══ SATURDAY SCHOOLS ══ */
+.saturday{background:var(--white);}
+.sat-g{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+.sat-photo{border-radius:22px;overflow:hidden;height:360px;box-shadow:0 16px 44px rgba(21,162,249,.13);}
+.sat-photo img{width:100%;height:100%;object-fit:cover;}
+.sat-cards{display:flex;flex-direction:column;gap:14px;}
+.scard{background:var(--soft);border-radius:16px;padding:20px 22px;border-left:4px solid var(--blue);display:flex;gap:13px;align-items:flex-start;}
+.scard-ico{width:42px;height:42px;border-radius:11px;flex-shrink:0;background:var(--blue);display:flex;align-items:center;justify-content:center;}
+.scard-ico svg{width:20px;height:20px;fill:#fff;}
+.scard h4{font-family:'Raleway',sans-serif;font-size:13.5px;font-weight:900;color:var(--navy);margin-bottom:4px;}
+.scard p{font-size:12.5px;color:var(--muted);line-height:1.58;}
+.countries{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px;}
+.cpill{background:var(--soft);border:1px solid var(--border);border-radius:50px;padding:5px 13px;font-size:12.5px;font-weight:600;transition:all .2s;cursor:default;}
+.cpill:hover{background:var(--blue-pale);border-color:var(--blue);}
+
+/* ══ PARTNER SECTION ══ */
+.partner{background:var(--soft);}
+.partner-g{display:grid;grid-template-columns:1fr 1fr;gap:44px;}
+.pcol{background:var(--white);border-radius:22px;padding:36px 32px;border:2px solid var(--border);}
+.pcol.hot{border-color:var(--blue);background:linear-gradient(155deg,var(--navy) 0%,#0d3a5e 100%);}
+.pcol-head{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+.pcol-icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.pcol-icon.cl{background:rgba(21,162,249,.12);}
+.pcol-icon.cl svg{fill:var(--blue);}
+.pcol.hot .pcol-icon.cl{background:rgba(255,251,157,.15);}
+.pcol.hot .pcol-icon.cl svg{fill:var(--yellow);}
+.pcol-icon svg{width:24px;height:24px;}
+.pcol h3{font-family:'Raleway',sans-serif;font-size:18px;font-weight:900;color:var(--navy);}
+.pcol.hot h3{color:var(--yellow);}
+.pcol p{font-size:13.5px;color:var(--muted);line-height:1.68;margin-bottom:16px;}
+.pcol.hot p{color:rgba(255,255,255,.7);}
+.pcol-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:22px;}
+.pcol-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--text);}
+.pcol.hot .pcol-list li{color:rgba(255,255,255,.8);}
+.pcol-list li::before{content:'✓';color:var(--green);font-weight:900;font-size:13px;flex-shrink:0;margin-top:1px;}
+.pcol.hot .pcol-list li::before{color:var(--yellow);}
+
+/* ══ ORGANIZE ══ */
+.org-s{background:linear-gradient(140deg,var(--blue) 0%,var(--blue-dk) 100%);position:relative;overflow:hidden;}
+.org-s::before{content:'';position:absolute;width:550px;height:550px;border-radius:50%;background:rgba(255,255,255,.05);top:-180px;right:-130px;}
+.org-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative;z-index:1;}
+.org-photo{border-radius:22px;overflow:hidden;height:380px;box-shadow:0 20px 50px rgba(0,0,0,.25);}
+.org-photo img{width:100%;height:100%;object-fit:cover;}
+.org-list{display:flex;flex-direction:column;gap:13px;margin-top:22px;}
+.oi{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:13px;padding:15px 18px;display:flex;gap:12px;align-items:center;}
+.oi-n{width:34px;height:34px;border-radius:9px;background:var(--yellow);color:var(--navy);font-family:'Raleway',sans-serif;font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.oi p{font-size:13px;color:rgba(255,255,255,.84);line-height:1.5;}
+
+/* ══ FOUNDER ══ */
+.founder{background:var(--white);}
+.founder-g{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start;}
+.founder-photo-wrap{position:relative;}
+.founder-photo{border-radius:24px;overflow:hidden;height:460px;box-shadow:0 22px 60px rgba(21,162,249,.18);}
+.founder-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+.founder-badge{position:absolute;bottom:-18px;right:-18px;background:var(--blue);border-radius:16px;padding:14px 18px;box-shadow:0 8px 28px rgba(21,162,249,.4);color:#fff;}
+.founder-badge strong{font-family:'Raleway',sans-serif;font-size:13px;font-weight:900;display:block;color:var(--yellow);margin-bottom:2px;}
+.founder-badge span{font-size:11px;color:rgba(255,255,255,.75);}
+.founder-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;}
+.ftag{display:inline-flex;align-items:center;gap:5px;background:var(--blue-pale);border:1px solid var(--border);border-radius:50px;padding:5px 12px;font-size:11.5px;font-weight:700;color:var(--blue-dk);}
+.ftag svg{width:13px;height:13px;fill:var(--blue);}
+.founder-text{font-size:15px;color:var(--muted);line-height:1.74;margin-bottom:14px;}
+.founder-link{display:inline-flex;align-items:center;gap:7px;background:var(--yellow);color:var(--navy);padding:11px 22px;border-radius:50px;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;font-weight:900;transition:all .2s;margin-top:6px;}
+.founder-link:hover{background:var(--blue);color:#fff;transform:translateY(-2px);}
+
+/* ══ TESTIMONIALS ══ */
+.testi{background:var(--cream);}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.tcard{background:var(--white);border-radius:20px;padding:26px;border:1px solid var(--border);position:relative;}
+.tavatar{width:56px;height:56px;border-radius:50%;overflow:hidden;border:3px solid var(--blue-lt);margin-bottom:12px;}
+.tavatar img{width:100%;height:100%;object-fit:cover;}
+.tstars{color:var(--yellow-dk);font-size:13.5px;margin-bottom:11px;}
+.tcard p{font-size:13.5px;line-height:1.7;color:var(--text);font-style:italic;}
+.tmeta{margin-top:14px;border-top:1px solid var(--border);padding-top:12px;}
+.tmeta strong{display:block;font-weight:800;font-size:13.5px;color:var(--navy);}
+.tmeta span{font-size:11.5px;color:var(--muted);}
+.qmark{position:absolute;top:16px;right:20px;font-size:54px;font-family:'Raleway',sans-serif;font-weight:900;color:var(--blue-lt);line-height:1;}
+
+/* ══ NEWS ══ */
+.news{background:var(--white);}
+.ngrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.ncard{background:var(--soft);border-radius:18px;overflow:hidden;border:1px solid var(--border);transition:all .3s;}
+.ncard:hover{transform:translateY(-4px);box-shadow:0 16px 44px rgba(21,162,249,.11);}
+.nimg{height:170px;overflow:hidden;}
+.nimg img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+.ncard:hover .nimg img{transform:scale(1.06);}
+.nbody{padding:20px;}
+.ntag{display:inline-block;background:rgba(21,162,249,.1);color:var(--blue-dk);border-radius:50px;padding:3px 11px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;margin-bottom:9px;}
+.nbody h3{font-family:'Raleway',sans-serif;font-size:14px;font-weight:800;color:var(--navy);margin-bottom:7px;line-height:1.38;}
+.nbody p{font-size:12.5px;color:var(--muted);line-height:1.58;}
+.ndate{font-size:11px;color:var(--muted);margin-top:9px;}
+
+/* ══ CTA ══ */
+.cta-s{background:var(--navy);text-align:center;padding:88px 4%;position:relative;overflow:hidden;}
+.cta-s::before,.cta-s::after{content:'';position:absolute;border-radius:50%;background:rgba(21,162,249,.07);}
+.cta-s::before{width:480px;height:480px;left:-100px;top:-100px;}
+.cta-s::after{width:360px;height:360px;right:-70px;bottom:-70px;}
+.cta-s h2{font-size:clamp(1.7rem,3.8vw,2.8rem);font-weight:900;color:#fff;margin-bottom:16px;position:relative;z-index:1;}
+.cta-s h2 em{color:var(--yellow);font-style:normal;}
+.cta-s p{font-size:16px;color:rgba(255,255,255,.68);max-width:520px;margin:0 auto 36px;line-height:1.7;position:relative;z-index:1;}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;}
+.cal-btn{background:var(--blue);color:#fff;border:none;padding:14px 28px;border-radius:50px;font-family:'Raleway',sans-serif;font-size:13.5px;font-weight:900;cursor:pointer;transition:all .25s;text-decoration:none;display:inline-flex;align-items:center;gap:9px;box-shadow:0 7px 24px rgba(21,162,249,.38);}
+.cal-btn:hover{background:#fff;color:var(--navy);transform:translateY(-2px);}
+.cal-btn svg{width:18px;height:18px;fill:currentColor;}
+
+/* ══ FOOTER ══ */
+footer{background:#061929;padding:56px 4% 26px;}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:40px;}
+.fbrand p{font-size:12.5px;color:rgba(255,255,255,.42);line-height:1.7;margin-top:12px;}
+.fsoc{display:flex;gap:9px;margin-top:16px;}
+.fsoc a{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:all .2s;text-decoration:none;}
+.fsoc a:hover{background:var(--yellow);}
+.fsoc a svg{width:15px;height:15px;fill:rgba(255,255,255,.65);}
+.fsoc a:hover svg{fill:var(--navy);}
+.fcol h5{font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;}
+.fcol a{display:block;font-size:12.5px;color:rgba(255,255,255,.42);text-decoration:none;margin-bottom:8px;transition:color .2s;}
+.fcol a:hover{color:var(--yellow);}
+.fbot{border-top:1px solid rgba(255,255,255,.07);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.fbot p{font-size:11.5px;color:rgba(255,255,255,.3);}
+.fflag{display:flex;align-items:center;gap:8px;}
+.ffl{width:30px;height:19px;border-radius:3px;overflow:hidden;display:flex;flex-direction:column;}
+.ffl-t{flex:1;background:#005BBB;}
+.ffl-b{flex:1;background:#FFD500;}
+
+/* ══ MODAL ══ */
+.moverlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(6,25,41,.78);backdrop-filter:blur(10px);align-items:center;justify-content:center;}
+.moverlay.open{display:flex;}
+.modal{background:var(--white);border-radius:26px;padding:40px;max-width:470px;width:92%;position:relative;max-height:92vh;overflow-y:auto;animation:mIn .3s ease;}
+@keyframes mIn{from{opacity:0;transform:scale(.92) translateY(18px)}to{opacity:1;transform:none}}
+.mc{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;background:var(--soft);border:none;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;transition:.2s;}
+.mc:hover{background:var(--border);}
+.mplan{font-size:10.5px;font-weight:900;color:var(--blue);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:5px;}
+.modal h2{font-family:'Raleway',sans-serif;font-size:20px;font-weight:900;color:var(--navy);margin-bottom:5px;}
+.mprice{font-family:'Raleway',sans-serif;font-size:32px;font-weight:900;color:var(--blue);margin-bottom:20px;}
+.mprice span{font-size:14px;color:var(--muted);}
+.payopts{display:flex;flex-direction:column;gap:10px;margin-bottom:18px;}
+.payopt{border:2px solid var(--border);border-radius:12px;padding:14px 16px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:12px;}
+.payopt:hover,.payopt.active{border-color:var(--blue);background:var(--blue-pale);}
+.payopt-ico{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.payopt-ico svg{width:20px;height:20px;}
+.payopt div strong{display:block;font-size:13px;font-weight:800;color:var(--navy);}
+.payopt div span{font-size:11px;color:var(--muted);}
+.fg2{margin-bottom:15px;}
+.fg2 label{display:block;font-size:11px;font-weight:800;color:var(--navy);margin-bottom:4px;text-transform:uppercase;letter-spacing:.7px;}
+.fg2 input,.fg2 select{width:100%;padding:11px 13px;border-radius:10px;border:2px solid var(--border);font-family:'Mulish',sans-serif;font-size:13.5px;outline:none;transition:.2s;background:var(--cream);color:var(--text);}
+.fg2 input:focus,.fg2 select:focus{border-color:var(--blue);}
+.fgrow{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.bsub{width:100%;padding:14px;background:var(--navy);color:#fff;border:none;border-radius:50px;font-family:'Raleway',sans-serif;font-size:13.5px;font-weight:900;cursor:pointer;transition:.25s;margin-top:4px;}
+.bsub:hover{background:var(--blue);}
+.mnote{text-align:center;font-size:11px;color:var(--muted);margin-top:9px;line-height:1.5;}
+
+/* ══ FADE IN ══ */
+.fi{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease;}
+.fi.vis{opacity:1;transform:none;}
+.fi.d1{transition-delay:.1s;}
+.fi.d2{transition-delay:.2s;}
+.fi.d3{transition-delay:.3s;}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:1080px){
+  .feats{grid-template-columns:repeat(2,1fr);}
+  .hero-inner{grid-template-columns:1fr;}
+  .hero-photos{display:none;}
+  nav>a:not(:last-child):not(.btn-header){display:none;}
+}
+@media(max-width:860px){
+  .steps{grid-template-columns:1fr 1fr;}
+  .step::after{display:none;}
+  .mission-g,.sat-g,.model-g,.org-inner,.founder-g,.fg{grid-template-columns:1fr;}
+  .tgrid,.ngrid,.partner-g{grid-template-columns:1fr;}
+  .plans{grid-template-columns:1fr;}
+}
+@media(max-width:540px){
+  .steps{grid-template-columns:1fr;}
+  .feats{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header>
+  <a href="#" class="logo">
+    <div class="logo-badge">Ukrainian for You</div>
+    <div class="logo-wrap">
+      <span class="logo-sub" data-i18n="logo_sub">Education without borders</span>
+    </div>
+  </a>
+  <nav>
+    <a href="#how" data-i18n="nav_how">How it works</a>
+    <a href="#pricing" data-i18n="nav_pricing">Packages</a>
+    <a href="#saturday" data-i18n="nav_sat">Saturday schools</a>
+    <a href="#partner" data-i18n="nav_partner">Partnership</a>
+    <a href="#founder" data-i18n="nav_founder">About us</a>
+    <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" class="btn-header" data-i18n="nav_consult">Free consultation</a>
+  </nav>
+  <div class="lang-switcher">
+    <button class="lang-btn" onclick="setLang('uk')">UA</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('es')">ES</button>
+  </div>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-grid"></div><div class="hero-grid2"></div><div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag">🇺🇦 <span data-i18n="hero_tag">For Ukrainian children in Europe</span></div>
+      <h1 data-i18n="hero_h1">Your native language —<br/><em>wherever you grow</em></h1>
+      <p class="hero-desc" data-i18n="hero_desc">Ukrainian for You is an online platform for learning Ukrainian for children aged 6–14 living abroad. Live lessons with a teacher or self-paced learning — any time, anywhere.</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn-p" data-i18n="hero_btn1">Choose a package →</a>
+        <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" class="btn-g" data-i18n="hero_btn2">📅 Free consultation</a>
+      </div>
+    </div>
+    <div class="hero-photos">
+      <div class="pc pc1"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=400&h=280&fit=crop&q=80" alt="children learning"/></div>
+      <div class="pc pc2"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=300&h=380&fit=crop&q=80" alt="child studying"/></div>
+      <div class="pc pc3"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=440&h=260&fit=crop&q=80" alt="online class"/></div>
+      <div class="pc pc4"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=290&h=240&fit=crop&q=80" alt="group learning"/></div>
+      <div class="hero-float">
+        <strong>Kalyna Education</strong>
+        <span data-i18n="hero_float">Interactive platform</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT BAR ═══ -->
+<div class="cbar">
+  <a href="https://wa.me/380683521151" target="_blank" class="citem">
+    <div class="cion"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.117 1.527 5.845L.057 23.5l5.797-1.52A11.947 11.947 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></div>
+    WhatsApp: +380 68 352 11 51
+  </a>
+  <a href="mailto:ukrainianforyou7@gmail.com" class="citem">
+    <div class="cion"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+    ukrainianforyou7@gmail.com
+  </a>
+  <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" class="citem">
+    <div class="cion"><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 18H5V8h14v13z"/></svg></div>
+    <span data-i18n="cbar_cal">Book a free consultation</span>
+  </a>
+</div>
+
+<!-- ═══ MISSION ═══ -->
+<section class="mission" id="about">
+  <div class="mission-g">
+    <div class="illus fi">
+      <div class="illus-main">
+        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=700&h=500&fit=crop&q=80" alt="children learning"/>
+      </div>
+      <div class="illus-badge">
+        <strong>2025</strong>
+        <span data-i18n="founded">Founded</span>
+      </div>
+    </div>
+    <div>
+      <span class="tag" data-i18n="our_mission">Our mission</span>
+      <h2 class="stitle" data-i18n="mission_title">Language is <em>roots</em>.<br/>Even far from home.</h2>
+      <p class="ssub" style="margin-bottom:28px;" data-i18n="mission_desc">Ukrainian for You was born in 2025 from the pain of parents who saw their children gradually forgetting their mother tongue. We help children living abroad stay connected to their language, culture and identity — wherever they are.</p>
+      <div class="vals">
+        <div class="vrow fi d1">
+          <div class="vicon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+          <div class="vtext"><h4 data-i18n="v1h">Preserving cultural identity</h4><p data-i18n="v1p">Children remember who they are through language, songs, fairy tales and traditions of their people.</p></div>
+        </div>
+        <div class="vrow fi d2">
+          <div class="vicon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+          <div class="vtext"><h4 data-i18n="v2h">Building a community</h4><p data-i18n="v2p">Students find friends across Europe — peers who understand their journey and share the same roots.</p></div>
+        </div>
+        <div class="vrow fi d3">
+          <div class="vicon"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18V15h2v-2.82l1 .55V15c0 2.21 1.79 4 4 4s4-1.79 4-4v-2.27l4-2.18L12 3z"/></svg></div>
+          <div class="vtext"><h4 data-i18n="v3h">Quality education without borders</h4><p data-i18n="v3p">Certified teachers, Ukrainian curriculum adapted for children growing up in a different language environment.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="how" id="how">
+  <div class="shead c">
+    <span class="tag" data-i18n="how_tag">How it works</span>
+    <h2 class="stitle" data-i18n="how_title">From registration to <em>first lesson</em></h2>
+    <p class="ssub" data-i18n="how_sub">Simple and clear for parents and children alike.</p>
+  </div>
+  <div class="steps">
+    <div class="step fi d1">
+      <div class="step-num">1</div>
+      <div class="step-icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 18H5V8h14v13zM7 10h5v5H7z"/></svg>
+      </div>
+      <h3 data-i18n="s1h">Book a free consultation</h3>
+      <p data-i18n="s1p">A 20-minute call with our coordinator via Calendly. We identify your child's needs and goals.</p>
+    </div>
+    <div class="step fi d2">
+      <div class="step-num">2</div>
+      <div class="step-icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 100 10A5 5 0 0012 2zm0 12c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4zm8-8h-2v2h-2v2h2v2h2v-2h2v-2h-2V6z"/></svg>
+      </div>
+      <h3 data-i18n="s2h">Level assessment</h3>
+      <p data-i18n="s2p">A quick 15-minute online test. We find the right group by age and level.</p>
+    </div>
+    <div class="step fi d3">
+      <div class="step-num">3</div>
+      <div class="step-icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v2H4V6h16zM4 18v-6h16v6H4zm2-2h4v-2H6v2z"/></svg>
+      </div>
+      <h3 data-i18n="s3h">Choose your package</h3>
+      <p data-i18n="s3p">With a live teacher or self-paced learning. Auto-subscription, cancel anytime.</p>
+    </div>
+    <div class="step fi">
+      <div class="step-num">4</div>
+      <div class="step-icon-wrap">
+        <svg viewBox="0 0 24 24"><path d="M19 1l-5 5v11l5-4.5V1zM1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5V6c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6z"/></svg>
+      </div>
+      <h3 data-i18n="s4h">Start learning!</h3>
+      <p data-i18n="s4p">Instant access to Kalyna Education platform. First lesson is free!</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" class="cal-btn">
+      <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 18H5V8h14v13z"/></svg>
+      <span data-i18n="book_free_cal">Book a free consultation</span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══ PLATFORM ═══ -->
+<section class="platform" id="platform">
+  <div class="shead c">
+    <span class="tag lt" data-i18n="platform_tag">Kalyna Education Platform</span>
+    <h2 class="stitle wh" data-i18n="platform_title">What's included in <em>every package</em></h2>
+    <p class="ssub wh" data-i18n="platform_sub">After payment you get full access to the Kalyna Education platform (kalynaed.com) with the Ukrainian for You brand.</p>
+  </div>
+  <div class="feats">
+    <div class="feat fi d1">
+      <div class="ficon"><svg viewBox="0 0 24 24"><path d="M17 10.5V7a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1v-3.5l4 4v-11l-4 4z"/></svg></div>
+      <h3 data-i18n="f1h">Live online lessons</h3>
+      <p data-i18n="f1p">55-minute lessons with a certified teacher in real time. Groups up to 8 students.</p>
+    </div>
+    <div class="feat fi d2">
+      <div class="ficon"><svg viewBox="0 0 24 24"><path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H20zM8 11h12v2H8zm0 5h12v2H8z"/></svg></div>
+      <h3 data-i18n="f2h">Personal dashboard</h3>
+      <p data-i18n="f2p">All materials, recorded lessons, homework and progress in one place.</p>
+    </div>
+    <div class="feat fi d3">
+      <div class="ficon"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"/></svg></div>
+      <h3 data-i18n="f3h">Interactive materials</h3>
+      <p data-i18n="f3p">Video lessons, games, quizzes, reading and writing exercises. Learning is fun!</p>
+    </div>
+    <div class="feat fi">
+      <div class="ficon"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zm0 16H5V9h14v11z"/></svg></div>
+      <h3 data-i18n="f4h">Homework with feedback</h3>
+      <p data-i18n="f4p">Structured tasks after each lesson, reviewed by the teacher with detailed feedback.</p>
+    </div>
+    <div class="feat fi d1">
+      <div class="ficon"><svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg></div>
+      <h3 data-i18n="f5h">Progress tracking</h3>
+      <p data-i18n="f5p">Parents see their child's achievements in real time. Weekly email reports.</p>
+    </div>
+    <div class="feat fi d2">
+      <div class="ficon"><svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></div>
+      <h3 data-i18n="f6h">Teacher support</h3>
+      <p data-i18n="f6p">The teacher is available in chat between lessons. Response within 24 hours.</p>
+    </div>
+    <div class="feat fi d3">
+      <div class="ficon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+      <h3 data-i18n="f7h">Cultural events</h3>
+      <p data-i18n="f7p">Online celebrations, poetry contests, Shevchenko evenings. Living Ukrainian culture.</p>
+    </div>
+    <div class="feat fi">
+      <div class="ficon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></div>
+      <h3 data-i18n="f8h">Certificates</h3>
+      <p data-i18n="f8p">Official Ukrainian for You certificate after completing each level.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ OFFLINE + ONLINE MODEL ═══ -->
+<section class="model" id="model">
+  <div class="shead c">
+    <span class="tag org" data-i18n="model_tag">Learning formats</span>
+    <h2 class="stitle" data-i18n="model_title">Online platform + <em>offline school</em></h2>
+    <p class="ssub" data-i18n="model_sub">Not every child has a computer. That's why we offer 4 flexible learning formats to suit every school and family situation.</p>
+  </div>
+  <div class="model-g">
+    <div>
+      <div class="model-photo fi">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=420&fit=crop&q=80" alt="classroom learning"/>
+      </div>
+    </div>
+    <div class="model-opts">
+      <div class="mopt o1 fi d1">
+        <div class="mopt-ico"><svg viewBox="0 0 24 24"><path d="M21 3H3a2 2 0 00-2 2v14a2 2 0 002 2h18a2 2 0 002-2V5a2 2 0 00-2-2zm0 14H3V7h18v10zm-5-8H8V7h8v2z"/></svg></div>
+        <div>
+          <h4 data-i18n="mo1h">Teacher's laptop + projector (offline)</h4>
+          <p data-i18n="mo1p">The teacher uses the platform on their laptop connected to a projector or TV. Children interact verbally, work at the board, answer quizzes together. The teacher controls the platform — no devices needed for students.</p>
+        </div>
+      </div>
+      <div class="mopt o2 fi d2">
+        <div class="mopt-ico"><svg viewBox="0 0 24 24"><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg></div>
+        <div>
+          <h4 data-i18n="mo2h">School computer lab (hybrid)</h4>
+          <p data-i18n="mo2p">If the school has computers or tablets — each child gets their own platform login. The teacher leads the lesson live while students complete interactive tasks individually.</p>
+        </div>
+      </div>
+      <div class="mopt o3 fi d3">
+        <div class="mopt-ico"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg></div>
+        <div>
+          <h4 data-i18n="mo3h">Fully online (no school needed)</h4>
+          <p data-i18n="mo3p">No Saturday school in your city? The child learns online from home with peers from across Europe. The live group lesson + self-study platform replaces the physical school entirely.</p>
+        </div>
+      </div>
+      <div class="mopt o4 fi">
+        <div class="mopt-ico"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-7 3a4 4 0 110 8 4 4 0 010-8zm0 12a8 8 0 00-8 4h16a8 8 0 00-8-4z"/></svg></div>
+        <div>
+          <h4 data-i18n="mo4h">School has its own teacher</h4>
+          <p data-i18n="mo4p">If the Saturday school already has a Ukrainian teacher, we provide the platform, curriculum, materials and methodological support. The teacher uses our content — saving hours of lesson preparation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section class="pricing" id="pricing">
+  <div class="shead c">
+    <span class="tag" data-i18n="pricing_tag">Packages & prices</span>
+    <h2 class="stitle" data-i18n="pricing_title">Choose the format for <em>your child</em></h2>
+    <p class="ssub" data-i18n="pricing_sub">Two learning formats for every rhythm and budget. First lesson is free.</p>
+  </div>
+  <div class="plans">
+    <!-- SELF-STUDY -->
+    <div class="plan fi d1">
+      <div class="plan-irow">
+        <div class="plan-ico"><img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=100&h=100&fit=crop&q=80" alt=""/></div>
+        <div>
+          <div class="plan-lbl" data-i18n="p1_lbl">Package 1 — Self-study</div>
+          <div class="plan-name" data-i18n="p1_name">I learn myself</div>
+        </div>
+      </div>
+      <p class="plan-desc" data-i18n="p1_desc">Like Duolingo but in your native language — interactive platform with lessons, games and exercises without a live teacher. Perfect for independent learners.</p>
+      <div class="plan-price"><strong>€12</strong><span> / <span data-i18n="month">month</span></span></div>
+      <div class="plan-calc">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-7 3a4 4 0 110 8 4 4 0 010-8z"/></svg>
+        <span data-i18n="p1_calc">Unlimited lessons on platform</span>
+      </div>
+      <p class="plan-period" data-i18n="p1_period">or €120 / year (save €24)</p>
+      <div class="plan-hr"></div>
+      <ul class="plan-feats">
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_platform">Full access to Kalyna Education platform</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_video">Interactive video lessons (self-paced)</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_games">Games, quizzes, reading exercises</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_dashboard">Personal student dashboard</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_progress">Automatic progress tracking</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_report">Weekly report for parents</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_events">Cultural online events</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_cert">Level certificate</span></li>
+      </ul>
+      <a href="#" class="btn-plan bpo" onclick="openModal('solo');return false;" data-i18n="try_free">Try 7 days free →</a>
+      <p class="plan-note" data-i18n="p1_note">✓ 7-day free trial</p>
+    </div>
+    <!-- WITH TEACHER -->
+    <div class="plan hot fi d2">
+      <div class="plan-badge" data-i18n="most_popular">⭐ Most popular</div>
+      <div class="plan-irow">
+        <div class="plan-ico"><img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=100&h=100&fit=crop&q=80" alt=""/></div>
+        <div>
+          <div class="plan-lbl" data-i18n="p2_lbl">Package 2 — With live teacher</div>
+          <div class="plan-name" data-i18n="p2_name">Learning together</div>
+        </div>
+      </div>
+      <p class="plan-desc" data-i18n="p2_desc">Live group lessons (55 min) + full platform access. Real communication, motivation and visible progress.</p>
+      <div class="plan-price"><strong>€45</strong><span> / <span data-i18n="month">month</span></span></div>
+      <div class="plan-calc">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2a5 5 0 100 10A5 5 0 0012 2z"/></svg>
+        <span data-i18n="p2_calc">4 lessons × 55 min = €11.25 per lesson</span>
+      </div>
+      <p class="plan-period" data-i18n="p2_period">or €450 / year (save €90)</p>
+      <div class="plan-hr"></div>
+      <ul class="plan-feats">
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="p2f1">4 live group lessons/month (55 min each)</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="p2f2">Groups up to 8 students (by age & level)</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_platform">Full access to Kalyna Education platform</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_video">All interactive materials &amp; videos</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="p2f3">Homework reviewed by teacher</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="p2f4">Lesson recordings available 30 days</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="p2f5">Weekly report + monthly analytics</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="p2f6">Chat with teacher between lessons</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_events">Cultural events + competitions</span></li>
+        <li><div class="chk"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><span data-i18n="pf_cert">Ukrainian for You certificate</span></li>
+      </ul>
+      <a href="#" class="btn-plan bpf" onclick="openModal('live');return false;" data-i18n="enroll_free">Enroll — first lesson free →</a>
+      <p class="plan-note" data-i18n="p2_note">✓ No commitment • Cancel anytime</p>
+    </div>
+  </div>
+
+  <!-- Auto-subscription -->
+  <div class="autosub fi" style="margin-top:28px;">
+    <div class="autosub-ico">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v2H4V6h16zM4 18v-6h16v6H4zm2-2h4v-2H6v2z"/></svg>
+    </div>
+    <div>
+      <h4 data-i18n="autosub_h">🔄 Automatic monthly subscription</h4>
+      <p data-i18n="autosub_p">Upon enrollment, a simple agreement is signed with parents, your card is linked once, and the monthly fee is charged automatically on the same date each month. No need to pay manually. You can cancel at any time — from the next billing cycle. We process payments securely via PayPal or Stripe.</p>
+    </div>
+  </div>
+
+  <!-- Payment options -->
+  <div class="pay-chips">
+    <a href="https://wa.me/380683521151" target="_blank" class="pchip">
+      <svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.117 1.527 5.845L.057 23.5l5.797-1.52A11.947 11.947 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      WhatsApp: +380683521151
+    </a>
+    <a href="https://paypal.me/3521151" target="_blank" class="pchip">
+      <svg viewBox="0 0 24 24" fill="#003087" width="14" height="14"><path d="M7.076 21.337H2.47a.641.641 0 01-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106z"/></svg>
+      PayPal: 3521151@gmail.com
+    </a>
+    <span class="pchip">
+      <svg viewBox="0 0 24 24" fill="#15a2f9" width="14" height="14"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v2H4V6h16zM4 18v-6h16v6H4z"/></svg>
+      <span data-i18n="card">Card: 4441 1110 4591 1561</span>
+    </span>
+  </div>
+</section>
+
+<!-- ═══ SATURDAY SCHOOLS ═══ -->
+<section class="saturday" id="saturday">
+  <div class="sat-g">
+    <div>
+      <span class="tag" data-i18n="sat_tag">Saturday schools</span>
+      <h2 class="stitle" data-i18n="sat_title">Ukrainian for You in <em>Saturday schools</em> across Europe</h2>
+      <p class="ssub" style="margin-bottom:28px;" data-i18n="sat_desc">We partner with Saturday schools organised by the Ukrainian diaspora throughout Europe. A teacher — recommended by the school or found with our help — conducts lessons using our platform and curriculum.</p>
+      <div class="sat-cards">
+        <div class="scard fi d1">
+          <div class="scard-ico"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18V15h2v-2.82l1 .55V15c0 2.21 1.79 4 4 4s4-1.79 4-4v-2.27l4-2.18L12 3z"/></svg></div>
+          <div>
+            <h4 data-i18n="sc1h">Flexible teacher options</h4>
+            <p data-i18n="sc1p">The school can provide its own teacher, or we help find a qualified specialist — online or offline. We support and train every teacher with our methodology.</p>
+          </div>
+        </div>
+        <div class="scard fi d2">
+          <div class="scard-ico"><svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2z"/></svg></div>
+          <div>
+            <h4 data-i18n="sc2h">Saturday lessons by age group</h4>
+            <p data-i18n="sc2p">55-minute lessons for each age group: 6–8 yrs, 9–11 yrs, 12–14 yrs. Schedule is agreed individually for each school.</p>
+          </div>
+        </div>
+        <div class="scard fi d3">
+          <div class="scard-ico"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-7 3a4 4 0 110 8 4 4 0 010-8z"/></svg></div>
+          <div>
+            <h4 data-i18n="sc3h">No local school yet?</h4>
+            <p data-i18n="sc3p">If there's no Saturday school in your city, children join live online groups with peers from other countries. We can also help you start one — see the Partnership section.</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:20px;">
+        <h4 style="font-family:'Raleway',sans-serif;font-size:13.5px;font-weight:800;color:var(--navy);margin-bottom:12px;" data-i18n="countries_h">🗺️ Countries we serve:</h4>
+        <div class="countries">
+          <span class="cpill">🇵🇱 Poland</span><span class="cpill">🇩🇪 Germany</span><span class="cpill">🇫🇷 France</span>
+          <span class="cpill">🇮🇹 Italy</span><span class="cpill">🇪🇸 Spain</span><span class="cpill">🇨🇿 Czechia</span>
+          <span class="cpill">🇸🇰 Slovakia</span><span class="cpill">🇬🇧 UK</span><span class="cpill">🇳🇱 Netherlands</span>
+          <span class="cpill">🇧🇪 Belgium</span><span class="cpill">🇦🇹 Austria</span><span class="cpill">🇸🇪 Sweden</span>
+          <span class="cpill">🇵🇹 Portugal</span><span class="cpill">🇨🇭 Switzerland</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="sat-photo fi">
+        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=700&h=500&fit=crop&q=80" alt="Saturday school"/>
+      </div>
+      <div style="background:var(--blue-pale);border-radius:16px;padding:20px 22px;margin-top:14px;border:1.5px solid var(--border);" class="fi">
+        <h4 style="font-family:'Raleway',sans-serif;font-size:14px;font-weight:900;color:var(--navy);margin-bottom:7px;" data-i18n="sat_cta_h">📞 Does your child already attend a Saturday school?</h4>
+        <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:13px;" data-i18n="sat_cta_p">Enroll in the "Learning together" package — we'll connect your school to our program at no extra cost.</p>
+        <a href="https://wa.me/380683521151" target="_blank" class="btn-p" style="font-size:12.5px;padding:11px 22px;" data-i18n="write_wa">Write on WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PARTNER SECTION ═══ -->
+<section class="partner" id="partner">
+  <div class="shead c">
+    <span class="tag org" data-i18n="partner_tag">Consultation & Partnership</span>
+    <h2 class="stitle" data-i18n="partner_title">For <em>families</em> and <em>partners</em></h2>
+    <p class="ssub" data-i18n="partner_sub">Whether you're a parent looking for your child or a school director planning a Ukrainian programme — we have a tailored consultation for you.</p>
+  </div>
+  <div class="partner-g">
+    <!-- FOR PARENTS -->
+    <div class="pcol fi d1">
+      <div class="pcol-head">
+        <div class="pcol-icon cl"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg></div>
+        <h3 data-i18n="pc1_h">For parents</h3>
+      </div>
+      <p data-i18n="pc1_p">A free 20-minute consultation helps us understand your child's level, goals and best learning format — before any commitment.</p>
+      <ul class="pcol-list">
+        <li data-i18n="pc1_l1">Discuss your child's language level</li>
+        <li data-i18n="pc1_l2">Find the right package and format</li>
+        <li data-i18n="pc1_l3">Connect to a group in your time zone</li>
+        <li data-i18n="pc1_l4">Get answers to all your questions</li>
+        <li data-i18n="pc1_l5">First lesson completely free</li>
+      </ul>
+      <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" class="btn-plan bpo" style="margin-bottom:8px;" data-i18n="free_consult_btn">📅 Book a free parent consultation</a>
+    </div>
+    <!-- FOR SCHOOLS -->
+    <div class="pcol hot fi d2">
+      <div class="pcol-head">
+        <div class="pcol-icon cl"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18V15h2v-2.82l1 .55V15c0 2.21 1.79 4 4 4s4-1.79 4-4v-2.27l4-2.18L12 3zm4 9.27L12 14.45l-4-2.18V9.73L12 12l4-2.27v2.54z"/></svg></div>
+        <h3 data-i18n="pc2_h">For Saturday schools & partners</h3>
+      </div>
+      <p data-i18n="pc2_p">Want to launch a Ukrainian language course in your school, community centre or diaspora organisation? We offer a full partnership model.</p>
+      <ul class="pcol-list">
+        <li data-i18n="pc2_l1">Platform + curriculum + materials provided</li>
+        <li data-i18n="pc2_l2">Help finding or training a teacher</li>
+        <li data-i18n="pc2_l3">Admin dashboard for your school</li>
+        <li data-i18n="pc2_l4">Group discounts from 10 students</li>
+        <li data-i18n="pc2_l5">Support with promotion in the diaspora</li>
+        <li data-i18n="pc2_l6">No Ukrainian school in your city? We help start one!</li>
+      </ul>
+      <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" class="btn-plan bpf" style="margin-bottom:8px;" data-i18n="partner_consult_btn">📅 Book a partner consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ORGANIZE ═══ -->
+<section class="org-s" id="org">
+  <div class="org-inner">
+    <div>
+      <span class="tag lt" data-i18n="org_tag">New service</span>
+      <h2 class="stitle wh" data-i18n="org_title">We help you <em>launch</em><br/>a Ukrainian Saturday school</h2>
+      <p class="ssub wh" style="margin-bottom:22px;" data-i18n="org_desc">Want to open a Saturday school in your city but don't know where to start? Ukrainian for You provides full support — from finding a venue to running the first lesson.</p>
+      <div class="org-list">
+        <div class="oi fi d1"><div class="oi-n">1</div><p data-i18n="oi1">Consultation — we analyse your city, community and opportunities.</p></div>
+        <div class="oi fi d2"><div class="oi-n">2</div><p data-i18n="oi2">Help finding a venue — school, cultural centre or community hall.</p></div>
+        <div class="oi fi d3"><div class="oi-n">3</div><p data-i18n="oi3">Recruiting or training a teacher — recommended locally or sourced by us.</p></div>
+        <div class="oi fi"><div class="oi-n">4</div><p data-i18n="oi4">Platform, curriculum, materials and school admin dashboard — all included.</p></div>
+        <div class="oi fi d1"><div class="oi-n">5</div><p data-i18n="oi5">Support with promoting among the local diaspora and Ukrainian associations.</p></div>
+        <div class="oi fi d2"><div class="oi-n">6</div><p data-i18n="oi6">If starting offline is not possible — children join our live online groups with peers across Europe.</p></div>
+      </div>
+      <div style="margin-top:26px;">
+        <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" class="btn-p" data-i18n="org_cta">📅 Discuss opening a school →</a>
+      </div>
+    </div>
+    <div class="org-photo fi">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=480&fit=crop&q=80" alt="organize school"/>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOUNDER ═══ -->
+<section class="founder" id="founder">
+  <div class="shead c">
+    <span class="tag" data-i18n="founder_tag">About the founder</span>
+    <h2 class="stitle" data-i18n="founder_title">Created with <em>heart and experience</em></h2>
+  </div>
+  <div class="founder-g">
+    <div class="founder-photo-wrap fi">
+      <div class="founder-photo">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=600&fit=crop&q=80" alt="Iryna Lutsenko founder"/>
+      </div>
+      <div class="founder-badge">
+        <strong>Iryna Lutsenko</strong>
+        <span data-i18n="founder_badge">Founder & Coach</span>
+      </div>
+    </div>
+    <div>
+      <div class="founder-tags">
+        <span class="ftag"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg><span data-i18n="ftag1">Certified coach</span></span>
+        <span class="ftag"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg><span data-i18n="ftag2">Diaspora connections</span></span>
+        <span class="ftag"><svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg><span data-i18n="ftag3">European Ukrainian associations</span></span>
+        <span class="ftag"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg><span data-i18n="ftag4">Patriot & educator</span></span>
+      </div>
+      <h3 style="font-family:'Raleway',sans-serif;font-size:20px;font-weight:900;color:var(--navy);margin-bottom:14px;" data-i18n="founder_name">Iryna Lutsenko — founder, coach, Ukrainian language advocate</h3>
+      <p class="founder-text" data-i18n="founder_p1">Ukrainian for You was born not in a boardroom, but from a real pain that Iryna witnessed firsthand. Travelling across Europe and speaking with Ukrainian families in Poland, Germany, Spain, France and the UK, she heard the same story again and again: children are forgetting Ukrainian. They switch to the local language, feel awkward speaking Ukrainian with their parents, and slowly lose the thread that connects them to their roots.</p>
+      <p class="founder-text" data-i18n="founder_p2">As a certified coach and educator, Iryna began collaborating with Ukrainian diaspora associations across Europe — in Warsaw, Berlin, Madrid, Paris, Prague and beyond. She discovered that dozens of Saturday schools existed but lacked a unified platform, structured curriculum and digital tools. The teachers worked on enthusiasm alone, without support.</p>
+      <p class="founder-text" data-i18n="founder_p3">In 2025, Iryna launched Ukrainian for You — a project that unites a digital platform, a community of teachers and a network of partner schools. Her coaching background shapes the project's philosophy: it's not about grammar drills, it's about children feeling proud to speak Ukrainian. About identity. About belonging.</p>
+      <a href="https://irenlutsen.github.io/Career-couch/" target="_blank" class="founder-link">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+        <span data-i18n="founder_link">Iryna's coaching website →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="testi">
+  <div class="shead c">
+    <span class="tag" data-i18n="testi_tag">Parent reviews</span>
+    <h2 class="stitle" data-i18n="testi_title">What our <em>families say</em></h2>
+  </div>
+  <div class="tgrid">
+    <div class="tcard fi d1">
+      <div class="qmark">"</div>
+      <div class="tavatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&q=80" alt=""/></div>
+      <div class="tstars">★★★★★</div>
+      <p data-i18n="t1">We've been living in Warsaw for two years. My daughter was forgetting words, felt embarrassed to speak Ukrainian. After three months with Ukrainian for You — she reads Shevchenko poems and writes letters to her grandmother!</p>
+      <div class="tmeta"><strong>Oksana M.</strong><span data-i18n="t1_sub">mum of Darya, 8 — Warsaw 🇵🇱</span></div>
+    </div>
+    <div class="tcard fi d2">
+      <div class="qmark">"</div>
+      <div class="tavatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&q=80" alt=""/></div>
+      <div class="tstars">★★★★★</div>
+      <p data-i18n="t2">At first my son refused — "it's boring". Now he reminds me himself that his lesson is tomorrow. The interactive games are brilliant! He plays and doesn't even realise he's learning.</p>
+      <div class="tmeta"><strong>Vasyl K.</strong><span data-i18n="t2_sub">dad of Mykhailo, 10 — Berlin 🇩🇪</span></div>
+    </div>
+    <div class="tcard fi d3">
+      <div class="qmark">"</div>
+      <div class="tavatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&q=80" alt=""/></div>
+      <div class="tstars">★★★★★</div>
+      <p data-i18n="t3">We organised a Saturday school in Barcelona. Ukrainian for You gave us everything: platform, materials, teacher support. I recommend this to every diaspora organisation!</p>
+      <div class="tmeta"><strong>Liudmyla B.</strong><span data-i18n="t3_sub">school organiser — Barcelona 🇪🇸</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NEWS ═══ -->
+<section class="news" id="news">
+  <div class="shead c">
+    <span class="tag" data-i18n="news_tag">Community news</span>
+    <h2 class="stitle" data-i18n="news_title">The community <em>lives and acts</em></h2>
+    <p class="ssub" data-i18n="news_sub">Events, achievements and news from Ukrainian Saturday schools across Europe.</p>
+  </div>
+  <div class="ngrid">
+    <div class="ncard fi d1">
+      <div class="nimg"><img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=500&h=220&fit=crop&q=80" alt=""/></div>
+      <div class="nbody">
+        <span class="ntag" data-i18n="news1_tag">Competition</span>
+        <h3 data-i18n="news1_h">Winners of the "Native Word" 2025 competition received their diplomas</h3>
+        <p data-i18n="news1_p">Children from 15 countries participated in the pan-European Ukrainian poetry reading competition.</p>
+        <p class="ndate">📅 March 2025</p>
+      </div>
+    </div>
+    <div class="ncard fi d2">
+      <div class="nimg"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=220&fit=crop&q=80" alt=""/></div>
+      <div class="nbody">
+        <span class="ntag" data-i18n="news2_tag">Community</span>
+        <h3 data-i18n="news2_h">First partner Saturday schools launched in Spain and France</h3>
+        <p data-i18n="news2_p">Local organisers successfully launched the first Ukrainian Saturday schools with support from Ukrainian for You.</p>
+        <p class="ndate">📅 February 2025</p>
+      </div>
+    </div>
+    <div class="ncard fi d3">
+      <div class="nimg"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=500&h=220&fit=crop&q=80" alt=""/></div>
+      <div class="nbody">
+        <span class="ntag" data-i18n="news3_tag">Event</span>
+        <h3 data-i18n="news3_h">Online Vyshyvanka Day — children from across Europe celebrated together</h3>
+        <p data-i18n="news3_p">Children from Poland, Czechia, France and other countries wore their vyshyvankas and sang together in a live stream.</p>
+        <p class="ndate">📅 May 2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-s">
+  <span class="tag lt" data-i18n="cta_tag">Let's start</span>
+  <h2 data-i18n="cta_h">Enroll your child<br/><em>today</em></h2>
+  <p data-i18n="cta_p">Free consultation with our coordinator or a first lesson at no cost. Give your child the chance to keep Ukrainian in their heart — wherever they live.</p>
+  <div class="cta-btns">
+    <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" class="btn-p" data-i18n="cta_btn1">📅 Book a free consultation</a>
+    <a href="#pricing" class="btn-g" data-i18n="cta_btn2">View packages</a>
+    <a href="https://wa.me/380683521151" target="_blank" class="btn-g" data-i18n="cta_btn3">💬 WhatsApp</a>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="fg">
+    <div class="fbrand">
+      <div class="logo-badge" style="display:inline-block;">Ukrainian for You</div>
+      <p data-i18n="footer_desc">Online platform for preserving and learning the Ukrainian language for children living abroad. Powered by Kalyna Education. Together we save the language, culture and identity.</p>
+      <div class="fsoc">
+        <a href="https://wa.me/380683521151" target="_blank" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.117 1.527 5.845L.057 23.5l5.797-1.52A11.947 11.947 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+        <a href="mailto:ukrainianforyou7@gmail.com" title="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+        <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" title="Book"><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm0 18H5V8h14v13z"/></svg></a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h5 data-i18n="fcol1">Learning</h5>
+      <a href="#how" data-i18n="nav_how">How it works</a>
+      <a href="#platform" data-i18n="nav_platform">Platform</a>
+      <a href="#pricing" data-i18n="nav_pricing">Packages</a>
+      <a href="#model" data-i18n="nav_model">Learning formats</a>
+    </div>
+    <div class="fcol">
+      <h5 data-i18n="fcol2">Community</h5>
+      <a href="#saturday" data-i18n="nav_sat">Saturday schools</a>
+      <a href="#partner" data-i18n="nav_partner">Partnership</a>
+      <a href="#org" data-i18n="nav_org">Launch a school</a>
+      <a href="#news" data-i18n="fcol2_news">News</a>
+    </div>
+    <div class="fcol">
+      <h5 data-i18n="fcol3">Contact</h5>
+      <a href="https://wa.me/380683521151" target="_blank">WhatsApp</a>
+      <a href="mailto:ukrainianforyou7@gmail.com">Email</a>
+      <a href="https://calendly.com/irenlutsen/meet-with-me-1" target="_blank" data-i18n="book_consult">Book consultation</a>
+      <a href="#" data-i18n="footer_terms">Terms & payment</a>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2025 Ukrainian for You. Kalyna Education platform. All rights reserved.</p>
+    <div class="fflag"><div class="ffl"><div class="ffl-t"></div><div class="ffl-b"></div></div><span style="font-size:11.5px;color:rgba(255,255,255,.28);">Слава Україні 🇺🇦</span></div>
+  </div>
+</footer>
+
+<!-- ═══ MODAL ═══ -->
+<div class="moverlay" id="modal" onclick="closeOnBg(event)">
+  <div class="modal">
+    <button class="mc" onclick="closeModal()">✕</button>
+    <div class="mplan" id="m-plan">Ukrainian for You</div>
+    <h2 id="m-title">Enroll</h2>
+    <div class="mprice" id="m-price"></div>
+    <div style="margin-bottom:16px;">
+      <p style="font-size:11px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.7px;margin-bottom:9px;" data-i18n="pay_method">Payment method:</p>
+      <div class="payopts">
+        <div class="payopt active" onclick="selPay(this)">
+          <div class="payopt-ico" style="background:#e8f7ef;"><svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.117 1.527 5.845L.057 23.5l5.797-1.52A11.947 11.947 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></div>
+          <div><strong>WhatsApp</strong><span>+380 68 352 11 51</span></div>
+        </div>
+        <div class="payopt" onclick="selPay(this)">
+          <div class="payopt-ico" style="background:#e8f0fc;"><svg viewBox="0 0 24 24" fill="#003087" width="20" height="20"><path d="M7.076 21.337H2.47a.641.641 0 01-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106z"/></svg></div>
+          <div><strong>PayPal</strong><span>3521151@gmail.com</span></div>
+        </div>
+        <div class="payopt" onclick="selPay(this)">
+          <div class="payopt-ico" style="background:#eaf5ff;"><svg viewBox="0 0 24 24" fill="#15a2f9" width="20" height="20"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v2H4V6h16zM4 18v-6h16v6H4z"/></svg></div>
+          <div><strong data-i18n="auto_sub">Auto-subscription</strong><span data-i18n="auto_sub_s">Card linked, monthly billing</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="fgrow">
+      <div class="fg2"><label data-i18n="your_name">Your name</label><input type="text" placeholder="Olena Koval"/></div>
+      <div class="fg2"><label>Email</label><input type="email" placeholder="your@email.com"/></div>
+    </div>
+    <div class="fgrow">
+      <div class="fg2"><label data-i18n="child_name">Child's name</label><input type="text" placeholder="Name"/></div>
+      <div class="fg2"><label data-i18n="child_age">Child's age</label>
+        <select>
+          <option value="" data-i18n="select">Select</option>
+          <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          <option>11</option><option>12</option><option>13</option><option>14</option>
+        </select>
+      </div>
+    </div>
+    <div class="fg2"><label data-i18n="country">Country</label>
+      <select>
+        <option value="" data-i18n="select">Select</option>
+        <option>🇵🇱 Poland</option><option>🇩🇪 Germany</option><option>🇫🇷 France</option>
+        <option>🇮🇹 Italy</option><option>🇪🇸 Spain</option><option>🇨🇿 Czechia</option>
+        <option>🇸🇰 Slovakia</option><option>🇬🇧 UK</option><option>🇳🇱 Netherlands</option>
+        <option>🇧🇪 Belgium</option><option>🇦🇹 Austria</option><option>🇸🇪 Sweden</option><option data-i18n="other">Other</option>
+      </select>
+    </div>
+    <div class="fg2"><label data-i18n="preferred_time">Preferred time</label>
+      <select>
+        <option value="" data-i18n="select">Select</option>
+        <option data-i18n="t_weekday">Weekday evenings (17:00–20:00)</option>
+        <option data-i18n="t_sat_am">Saturday morning (10:00–13:00)</option>
+        <option data-i18n="t_sat_pm">Saturday afternoon (13:00–17:00)</option>
+        <option data-i18n="t_sun">Sunday (10:00–14:00)</option>
+      </select>
+    </div>
+    <button class="bsub" onclick="doSubmit()" data-i18n="submit_btn">Send application →</button>
+    <p class="mnote" data-i18n="modal_note">🔒 After your application, our coordinator will contact you within 24 hours. First lesson is free.</p>
+  </div>
+</div>
+
+<script>
+// ══ TRANSLATIONS ══
+const T = {
+  uk:{
+    logo_sub:"Освіта без кордонів",
+    nav_how:"Як це працює",nav_pricing:"Пакети",nav_sat:"Суботні школи",nav_partner:"Партнерство",nav_founder:"Про нас",nav_consult:"Безкоштовна консультація",
+    hero_tag:"Для українських дітей у Європі",
+    hero_h1:"Рідна мова —<br/><em>де б не виросло</em><br/>твоє дерево",
+    hero_desc:"Ukrainian for You — онлайн-платформа для вивчення української мови дітьми 6–14 років, які живуть за кордоном. Живі уроки з вчителем або самостійне навчання — у будь-який час, де завгодно.",
+    hero_btn1:"Обрати пакет →",hero_btn2:"📅 Безкоштовна консультація",hero_float:"Інтерактивна платформа",
+    cbar_cal:"Записатися на консультацію",
+    our_mission:"Наша місія",mission_title:"Мова — це <em>коріння</em>.<br/>Навіть далеко від дому.",
+    mission_desc:"Ukrainian for You народився у 2025 році з болю батьків, які спостерігали, як їхні діти поступово забувають рідну мову. Ми допомагаємо дітям, що живуть за кордоном, залишатися зі своєю мовою, культурою та ідентичністю — де б вони не були.",
+    v1h:"Збереження культурної ідентичності",v1p:"Діти пам'ятають, хто вони, через мову, пісні, казки та традиції свого народу.",
+    v2h:"Побудова спільноти",v2p:"Учні знаходять друзів по всій Європі — однолітків, які розуміють їхній шлях і розділяють коріння.",
+    v3h:"Якісна освіта без кордонів",v3p:"Сертифіковані вчителі, програма МОН України, адаптована для дітей в іншомовному середовищі.",
+    how_tag:"Як це працює",how_title:"Від реєстрації до <em>першого уроку</em>",how_sub:"Просто і зрозуміло для батьків і дітей.",
+    s1h:"Запишіться на консультацію",s1p:"Безкоштовна 20-хвилинна зустріч із координатором через Calendly. Визначаємо потреби вашої дитини.",
+    s2h:"Тест рівня",s2p:"15-хвилинний онлайн-тест. Підбираємо групу за віком і рівнем.",
+    s3h:"Оберіть пакет",s3p:"З живим вчителем або самостійне навчання. Автопідписка, скасування в будь-який момент.",
+    s4h:"Починайте вчитися!",s4p:"Миттєвий доступ до платформи Kalyna Education. Перший урок — безкоштовно!",
+    book_free_cal:"Записатися на безкоштовну консультацію",
+    platform_tag:"Платформа Kalyna Education",platform_title:"Що входить <em>в кожен пакет</em>",platform_sub:"Після оплати ви отримуєте повний доступ до платформи Kalyna Education (kalynaed.com) під брендом Ukrainian for You.",
+    f1h:"Живі онлайн-уроки",f1p:"Заняття по 55 хвилин із сертифікованим вчителем у реальному часі. Групи до 8 учнів.",
+    f2h:"Персональний кабінет",f2p:"Усі матеріали, записи уроків, домашні завдання та прогрес в одному місці.",
+    f3h:"Інтерактивні матеріали",f3p:"Відеоуроки, ігри, вікторини, вправи з читання та письма. Навчання — це весело!",
+    f4h:"Домашні завдання з зворотним зв'язком",f4p:"Структуровані завдання після кожного уроку, які перевіряє вчитель із детальним коментарем.",
+    f5h:"Відстеження прогресу",f5p:"Батьки бачать успіхи дитини в реальному часі. Щотижневі звіти на email.",
+    f6h:"Підтримка вчителів",f6p:"Вчитель доступний у чаті між уроками. Відповідь протягом 24 годин.",
+    f7h:"Культурні заходи",f7p:"Онлайн-свята, конкурси читання, Шевченківські вечори. Жива українська культура.",
+    f8h:"Сертифікати",f8p:"Офіційний сертифікат Ukrainian for You після завершення кожного рівня.",
+    model_tag:"Формати навчання",model_title:"Онлайн-платформа + <em>офлайн школа</em>",model_sub:"Не у кожної дитини є комп'ютер. Тому ми пропонуємо 4 гнучкі формати, що підходять для будь-якої школи та родини.",
+    mo1h:"Ноутбук вчителя + проєктор (офлайн)",mo1p:"Вчитель використовує платформу на ноутбуці, підключеному до проєктора або телевізора. Діти взаємодіють усно, відповідають на вікторини разом. Пристрої учням не потрібні.",
+    mo2h:"Комп'ютерний клас школи (гібрид)",mo2p:"Якщо в школі є комп'ютери або планшети — кожна дитина отримує власний логін. Вчитель веде урок, а учні виконують інтерактивні завдання індивідуально.",
+    mo3h:"Повністю онлайн (без школи)",mo3p:"Немає суботньої школи у вашому місті? Дитина навчається онлайн вдома з однолітками з різних країн Європи. Живий груповий урок + платформа повністю замінюють фізичну школу.",
+    mo4h:"У школі є власний вчитель",mo4p:"Якщо суботня школа вже має вчителя української, ми надаємо платформу, програму, матеріали та методичну підтримку. Вчитель використовує наш контент — і економить години підготовки.",
+    pricing_tag:"Пакети та ціни",pricing_title:"Оберіть формат для <em>вашої дитини</em>",pricing_sub:"Два формати навчання для будь-якого ритму і бюджету. Перший урок — безкоштовно.",
+    month:"міс",p1_lbl:"Пакет 1 — Самостійне навчання",p1_name:"Я сам учуся",
+    p1_desc:"Як Duolingo, але рідною мовою — інтерактивна платформа без живого вчителя. Ідеально для самостійних дітей.",
+    p1_calc:"Необмежений доступ до платформи",p1_period:"або €120 / рік (економія €24)",
+    pf_platform:"Повний доступ до платформи Kalyna Education",pf_video:"Інтерактивні відеоуроки (власний темп)",
+    pf_games:"Ігри, вікторини, вправи з читання",pf_dashboard:"Персональний кабінет учня",
+    pf_progress:"Автоматичне відстеження прогресу",pf_report:"Щотижневий звіт для батьків",
+    pf_events:"Культурні онлайн-заходи",pf_cert:"Сертифікат після кожного рівня",
+    try_free:"Спробувати 7 днів безкоштовно →",p1_note:"✓ 7 днів безкоштовного доступу",
+    most_popular:"⭐ Найпопулярніший",
+    p2_lbl:"Пакет 2 — З живим вчителем",p2_name:"Разом з вчителем",
+    p2_desc:"Живі групові заняття (55 хв) + повний доступ до платформи. Реальне спілкування, мотивація і видимий прогрес.",
+    p2_calc:"4 уроки × 55 хв = €11.25 за урок",p2_period:"або €450 / рік (економія €90)",
+    p2f1:"4 живих групових уроки/міс (по 55 хв)",p2f2:"Група до 8 учнів (за віком і рівнем)",
+    p2f3:"Домашні завдання з перевіркою вчителем",p2f4:"Записи уроків доступні 30 днів",
+    p2f5:"Щотижневий звіт + місячна аналітика",p2f6:"Чат з вчителем між уроками",
+    enroll_free:"Записатися — перший урок безкоштовно →",p2_note:"✓ Без зобов'язань • Скасування в будь-який момент",
+    autosub_h:"🔄 Автоматична щомісячна підписка",autosub_p:"При записі підписується простий договір з батьками, прив'язується картка, і щомісяця в одну й ту саму дату відбувається автоматичне списання. Не потрібно платити вручну. Скасувати можна в будь-який момент — з наступного розрахункового циклу. Платежі проходять безпечно через PayPal або Stripe.",
+    card:"Картка: 4441 1110 4591 1561",
+    sat_tag:"Суботні школи",sat_title:"Ukrainian for You у <em>суботніх школах</em> Європи",
+    sat_desc:"Ми активно співпрацюємо з суботніми школами, організованими українською діаспорою по всій Європі. Вчитель — рекомендований школою або знайдений за нашою допомогою — проводить уроки з використанням нашої платформи та програми.",
+    sc1h:"Гнучкі варіанти вчителів",sc1p:"Школа може надати свого вчителя, або ми допомагаємо знайти кваліфікованого спеціаліста — онлайн або офлайн. Кожного вчителя ми підтримуємо методично.",
+    sc2h:"Суботні заняття за віковими групами",sc2p:"Заняття по 55 хвилин для кожної вікової групи: 6–8 р., 9–11 р., 12–14 р. Розклад погоджується індивідуально.",
+    sc3h:"Ще немає суботньої школи?",sc3p:"Якщо у вашому місті немає суботньої школи — дитина приєднується до живих онлайн-груп з однолітками з інших країн. Ми також можемо допомогти відкрити школу.",
+    countries_h:"🗺️ Країни присутності:",sat_cta_h:"📞 Ваша дитина вже ходить до суботньої школи?",
+    sat_cta_p:"Запишіть її на пакет «Разом з вчителем» — ми підключимо вашу школу до нашої програми безкоштовно.",
+    write_wa:"Написати в WhatsApp →",
+    partner_tag:"Консультація та партнерство",partner_title:"Для <em>родин</em> та <em>партнерів</em>",
+    partner_sub:"Ви батьки, що шукають навчання для дитини, чи директор школи, що планує запустити курс? Ми маємо консультацію саме для вас.",
+    pc1_h:"Для батьків",pc1_p:"Безкоштовна 20-хвилинна консультація допомагає зрозуміти рівень дитини, цілі та найкращий формат навчання — без жодних зобов'язань.",
+    pc1_l1:"Обговорюємо рівень мови дитини",pc1_l2:"Підбираємо пакет і формат",pc1_l3:"Підключаємо до групи у вашому часовому поясі",pc1_l4:"Відповідаємо на всі ваші запитання",pc1_l5:"Перший урок абсолютно безкоштовно",
+    free_consult_btn:"📅 Безкоштовна консультація для батьків",
+    pc2_h:"Для суботніх шкіл та партнерів",pc2_p:"Хочете запустити курс української у школі, культурному центрі чи організації діаспори? Пропонуємо повну модель партнерства.",
+    pc2_l1:"Платформа + програма + матеріали включені",pc2_l2:"Допомога з пошуком або навчанням вчителя",pc2_l3:"Адміністративний кабінет для вашої школи",pc2_l4:"Групові знижки від 10 учнів",pc2_l5:"Підтримка з просуванням серед діаспори",pc2_l6:"Немає школи у вашому місті? Допомагаємо відкрити!",
+    partner_consult_btn:"📅 Консультація для партнерів",
+    org_tag:"Нова послуга",org_title:"Ми допомагаємо <em>відкрити</em><br/>суботню школу",
+    org_desc:"Хочете відкрити суботню школу у вашому місті, але не знаєте, з чого почати? Ukrainian for You надає повний супровід — від пошуку приміщення до першого уроку.",
+    oi1:"Консультація — аналізуємо ваше місто, спільноту та можливості.",oi2:"Допомога з пошуком приміщення — школа, культурний центр чи громадська зала.",
+    oi3:"Підбір або навчання вчителя — рекомендованого місцево або знайденого нами.",oi4:"Платформа, програма, матеріали та адміністративний кабінет школи — все включено.",
+    oi5:"Підтримка з просуванням серед місцевої діаспори та українських асоціацій.",oi6:"Якщо відкриття офлайн неможливе — діти приєднуються до наших живих онлайн-груп з однолітками по всій Європі.",
+    org_cta:"📅 Обговорити відкриття школи →",
+    founder_tag:"Про засновницю",founder_title:"Створено із <em>серцем і досвідом</em>",
+    ftag1:"Сертифікований коуч",ftag2:"Зв'язки з діаспорою",ftag3:"Асоціації українців Європи",ftag4:"Патріот і педагог",
+    founder_badge:"Засновниця та коуч",
+    founder_name:"Ірина Луценко — засновниця, коуч, захисниця української мови",
+    founder_p1:"Ukrainian for You народився не в офісі, а з реального болю, який Ірина спостерігала на власні очі. Подорожуючи Європою і спілкуючись з українськими родинами в Польщі, Німеччині, Іспанії, Франції та Великій Британії, вона знову і знову чула одну й ту саму історію: діти забувають українську. Вони переходять на мову країни перебування, соромляться говорити українською з батьками і поступово втрачають нитку, що з'єднує їх з корінням.",
+    founder_p2:"Як сертифікований коуч і педагог, Ірина почала співпрацювати з українськими асоціаціями діаспори по всій Європі — у Варшаві, Берліні, Мадриді, Парижі, Празі та інших містах. Вона виявила, що десятки суботніх шкіл існують, але не мають єдиної платформи, структурованої програми та цифрових інструментів. Вчителі працювали на ентузіазмі, без підтримки.",
+    founder_p3:"У 2025 році Ірина запустила Ukrainian for You — проєкт, що об'єднує цифрову платформу, спільноту вчителів і мережу шкіл-партнерів. Її коучингова база формує філософію проєкту: йдеться не про граматичні вправи, а про те, щоб діти пишалися тим, що говорять українською. Про ідентичність. Про приналежність.",
+    founder_link:"Сайт Ірини (коучинг) →",
+    testi_tag:"Відгуки батьків",testi_title:"Що кажуть <em>наші родини</em>",
+    t1:"Ми живемо у Варшаві вже два роки. Донька забувала слова, соромилася говорити. Після трьох місяців з Ukrainian for You — вона читає вірші Шевченка і пише листи бабусі!",
+    t1_sub:"мама Дар'їки, 8 р. — Варшава 🇵🇱",
+    t2:"Спочатку син не хотів — 'нудно'. Тепер сам нагадує, що завтра урок. Інтерактивні ігри — це щось! Він грає і навіть не розуміє, що вчиться.",
+    t2_sub:"тато Михайлика, 10 р. — Берлін 🇩🇪",
+    t3:"Ми організували суботню школу в Барселоні. Ukrainian for You дали все: платформу, матеріали, підтримку вчителя. Рекомендую кожній організації діаспори!",
+    t3_sub:"організатор школи — Барселона 🇪🇸",
+    news_tag:"Новини спільноти",news_title:"Спільнота <em>живе і діє</em>",news_sub:"Події, досягнення та новини українських суботніх шкіл Європи.",
+    news1_tag:"Конкурс",news1_h:"Переможці конкурсу «Рідне слово» 2025 отримали дипломи",news1_p:"Діти з 15 країн взяли участь у всеєвропейському конкурсі читання українських творів.",
+    news2_tag:"Спільнота",news2_h:"Перші партнерські суботні школи відкрились в Іспанії та Франції",news2_p:"Місцеві організатори успішно запустили перші українські суботні школи за підтримки Ukrainian for You.",
+    news3_tag:"Подія",news3_h:"Онлайн-свято «День вишиванки» — діти з усієї Європи святкували разом",news3_p:"Діти з Польщі, Чехії, Франції та інших країн вдягнули вишиванки та заспівали разом у прямому ефірі.",
+    cta_tag:"Починаємо",cta_h:"Запишіть дитину<br/><em>вже сьогодні</em>",cta_p:"Безкоштовна консультація з координатором або перший урок без оплати. Дайте дитині шанс залишити українську у серці — де б вона не жила.",
+    cta_btn1:"📅 Безкоштовна консультація",cta_btn2:"Переглянути пакети",cta_btn3:"💬 WhatsApp",
+    footer_desc:"Онлайн-платформа для збереження та вивчення української мови дітьми за кордоном. На базі Kalyna Education. Разом зберігаємо мову, культуру та ідентичність.",
+    fcol1:"Навчання",nav_platform:"Платформа",nav_model:"Формати навчання",
+    fcol2:"Спільнота",nav_org:"Відкрити школу",fcol2_news:"Новини",
+    fcol3:"Контакти",book_consult:"Записатися",footer_terms:"Умови та оплата",
+    founded:"Засновано",
+    pay_method:"Спосіб оплати:",auto_sub:"Автопідписка",auto_sub_s:"Прив'язка картки, щомісячне списання",
+    your_name:"Ваше ім'я",child_name:"Ім'я дитини",child_age:"Вік дитини",country:"Країна",
+    preferred_time:"Зручний час",select:"Оберіть",other:"Інша",
+    t_weekday:"Будні вечори (17:00–20:00)",t_sat_am:"Субота ранок (10:00–13:00)",t_sat_pm:"Субота день (13:00–17:00)",t_sun:"Неділя (10:00–14:00)",
+    submit_btn:"Надіслати заявку →",modal_note:"🔒 Після заявки наш координатор зв'яжеться з вами протягом 24 годин. Перший урок — безкоштовно.",
+  },
+  es:{}
+};
+
+// Build Spanish from English as fallback
+T.en = {};
+Object.keys(T.uk).forEach(k=>{ T.en[k]=T.uk[k]; }); // will be overridden below
+// English overrides
+Object.assign(T.en,{
+  logo_sub:"Education without borders",
+  nav_how:"How it works",nav_pricing:"Packages",nav_sat:"Saturday schools",nav_partner:"Partnership",nav_founder:"About us",nav_consult:"Free consultation",
+  hero_tag:"For Ukrainian children in Europe",
+  hero_h1:"Your native language —<br/><em>wherever you grow</em>",
+  hero_desc:"Ukrainian for You is an online platform for learning Ukrainian for children aged 6–14 living abroad. Live lessons with a teacher or self-paced learning — any time, anywhere.",
+  hero_btn1:"Choose a package →",hero_btn2:"📅 Free consultation",hero_float:"Interactive platform",
+  cbar_cal:"Book a free consultation",
+  our_mission:"Our mission",mission_title:"Language is <em>roots</em>.<br/>Even far from home.",
+  mission_desc:"Ukrainian for You was born in 2025 from the pain of parents who saw their children gradually forgetting their mother tongue. We help children living abroad stay connected to their language, culture and identity — wherever they are.",
+  v1h:"Preserving cultural identity",v1p:"Children remember who they are through language, songs, fairy tales and traditions of their people.",
+  v2h:"Building a community",v2p:"Students find friends across Europe — peers who understand their journey and share the same roots.",
+  v3h:"Quality education without borders",v3p:"Certified teachers, Ukrainian curriculum adapted for children growing up in a different language environment.",
+  how_tag:"How it works",how_title:"From registration to <em>first lesson</em>",how_sub:"Simple and clear for parents and children alike.",
+  s1h:"Book a free consultation",s1p:"A 20-minute call with our coordinator via Calendly. We identify your child's needs and goals.",
+  s2h:"Level assessment",s2p:"A quick 15-minute online test. We find the right group by age and level.",
+  s3h:"Choose your package",s3p:"With a live teacher or self-paced. Auto-subscription, cancel anytime.",
+  s4h:"Start learning!",s4p:"Instant access to Kalyna Education platform. First lesson is free!",
+  book_free_cal:"Book a free consultation",
+  platform_tag:"Kalyna Education Platform",platform_title:"What's included in <em>every package</em>",
+  platform_sub:"After payment you get full access to the Kalyna Education platform (kalynaed.com) with the Ukrainian for You brand.",
+  f1h:"Live online lessons",f1p:"55-minute lessons with a certified teacher. Groups up to 8 students.",
+  f2h:"Personal dashboard",f2p:"All materials, recorded lessons, homework and progress in one place.",
+  f3h:"Interactive materials",f3p:"Video lessons, games, quizzes, reading and writing exercises.",
+  f4h:"Homework with feedback",f4p:"Structured tasks after each lesson, reviewed by the teacher.",
+  f5h:"Progress tracking",f5p:"Parents see their child's progress in real time. Weekly email reports.",
+  f6h:"Teacher support",f6p:"The teacher is available in chat. Response within 24 hours.",
+  f7h:"Cultural events",f7p:"Online celebrations, poetry contests, Shevchenko evenings.",
+  f8h:"Certificates",f8p:"Official Ukrainian for You certificate after each level.",
+  model_tag:"Learning formats",model_title:"Online platform + <em>offline school</em>",
+  model_sub:"Not every child has a computer. That's why we offer 4 flexible learning formats.",
+  mo1h:"Teacher's laptop + projector (offline)",mo1p:"The teacher uses the platform on a laptop connected to a projector or TV. Children interact verbally, no devices needed for students.",
+  mo2h:"School computer lab (hybrid)",mo2p:"If the school has computers or tablets — each child gets their own login and completes interactive tasks individually.",
+  mo3h:"Fully online (no school needed)",mo3p:"No Saturday school in your city? The child learns online from home with peers from across Europe.",
+  mo4h:"School has its own teacher",mo4p:"We provide the platform, curriculum, materials and methodological support. The teacher uses our content — saving hours of lesson prep.",
+  pricing_tag:"Packages & prices",pricing_title:"Choose the format for <em>your child</em>",pricing_sub:"Two learning formats for every rhythm and budget. First lesson is free.",
+  month:"month",p1_lbl:"Package 1 — Self-study",p1_name:"I learn myself",
+  p1_desc:"Like Duolingo but in your native language — interactive platform without a live teacher.",
+  p1_calc:"Unlimited platform access",p1_period:"or €120 / year (save €24)",
+  pf_platform:"Full access to Kalyna Education",pf_video:"Interactive video lessons (self-paced)",
+  pf_games:"Games, quizzes, reading exercises",pf_dashboard:"Personal student dashboard",
+  pf_progress:"Automatic progress tracking",pf_report:"Weekly report for parents",
+  pf_events:"Cultural online events",pf_cert:"Level certificate",
+  try_free:"Try 7 days free →",p1_note:"✓ 7-day free trial",
+  most_popular:"⭐ Most popular",
+  p2_lbl:"Package 2 — With live teacher",p2_name:"Learning together",
+  p2_desc:"Live group lessons (55 min) + full platform access. Real communication, motivation and visible progress.",
+  p2_calc:"4 lessons × 55 min = €11.25 per lesson",p2_period:"or €450 / year (save €90)",
+  p2f1:"4 live group lessons/month (55 min each)",p2f2:"Groups up to 8 students (by age & level)",
+  p2f3:"Homework reviewed by teacher",p2f4:"Lesson recordings available 30 days",
+  p2f5:"Weekly report + monthly analytics",p2f6:"Chat with teacher between lessons",
+  enroll_free:"Enroll — first lesson free →",p2_note:"✓ No commitment • Cancel anytime",
+  autosub_h:"🔄 Automatic monthly subscription",autosub_p:"Upon enrollment, a simple agreement is signed with parents, your card is linked once, and the monthly fee is charged automatically on the same date each month. Cancel anytime from the next billing cycle. Payments are processed securely via PayPal or Stripe.",
+  card:"Card: 4441 1110 4591 1561",
+  sat_tag:"Saturday schools",sat_title:"Ukrainian for You in <em>Saturday schools</em> across Europe",
+  sat_desc:"We partner with Saturday schools organised by the Ukrainian diaspora throughout Europe. A teacher — recommended by the school or found with our help — conducts lessons using our platform and curriculum.",
+  sc1h:"Flexible teacher options",sc1p:"The school can provide its own teacher, or we help find a qualified specialist — online or offline. We support and train every teacher.",
+  sc2h:"Saturday lessons by age group",sc2p:"55-minute lessons for 6–8 yrs, 9–11 yrs, 12–14 yrs. Schedule is agreed individually.",
+  sc3h:"No local school yet?",sc3p:"Children join live online groups with peers from other countries. We can also help you start a school.",
+  countries_h:"🗺️ Countries we serve:",sat_cta_h:"📞 Does your child already attend a Saturday school?",
+  sat_cta_p:"Enroll in the 'Learning together' package — we'll connect your school at no extra cost.",
+  write_wa:"Write on WhatsApp →",
+  partner_tag:"Consultation & Partnership",partner_title:"For <em>families</em> and <em>partners</em>",
+  partner_sub:"Whether you're a parent or a school director — we have a tailored consultation for you.",
+  pc1_h:"For parents",pc1_p:"A free 20-minute consultation to understand your child's level, goals and best learning format.",
+  pc1_l1:"Discuss your child's language level",pc1_l2:"Find the right package and format",pc1_l3:"Connect to a group in your time zone",pc1_l4:"Get answers to all your questions",pc1_l5:"First lesson completely free",
+  free_consult_btn:"📅 Book a free parent consultation",
+  pc2_h:"For Saturday schools & partners",pc2_p:"Want to launch a Ukrainian course in your school or diaspora organisation? We offer a full partnership model.",
+  pc2_l1:"Platform + curriculum + materials provided",pc2_l2:"Help finding or training a teacher",pc2_l3:"Admin dashboard for your school",pc2_l4:"Group discounts from 10 students",pc2_l5:"Support with promotion in the diaspora",pc2_l6:"No Ukrainian school in your city? We help start one!",
+  partner_consult_btn:"📅 Book a partner consultation",
+  org_tag:"New service",org_title:"We help you <em>launch</em><br/>a Ukrainian Saturday school",
+  org_desc:"Want to open a Saturday school in your city but don't know where to start? Ukrainian for You provides full support.",
+  oi1:"Consultation — we analyse your city, community and opportunities.",oi2:"Help finding a venue — school, cultural centre or community hall.",
+  oi3:"Recruiting or training a teacher — recommended locally or sourced by us.",oi4:"Platform, curriculum, materials and school admin dashboard — all included.",
+  oi5:"Support with promoting among the local diaspora and Ukrainian associations.",oi6:"If starting offline is not possible — children join our live online groups with peers across Europe.",
+  org_cta:"📅 Discuss opening a school →",
+  founder_tag:"About the founder",founder_title:"Created with <em>heart and experience</em>",
+  ftag1:"Certified coach",ftag2:"Diaspora connections",ftag3:"European Ukrainian associations",ftag4:"Patriot & educator",
+  founder_badge:"Founder & Coach",
+  founder_name:"Iryna Lutsenko — founder, coach, Ukrainian language advocate",
+  founder_p1:"Ukrainian for You was born not in a boardroom, but from a real pain that Iryna witnessed firsthand. Travelling across Europe and speaking with Ukrainian families in Poland, Germany, Spain, France and the UK, she heard the same story again and again: children are forgetting Ukrainian. They switch to the local language, feel awkward speaking Ukrainian with their parents, and slowly lose the thread that connects them to their roots.",
+  founder_p2:"As a certified coach and educator, Iryna began collaborating with Ukrainian diaspora associations across Europe — in Warsaw, Berlin, Madrid, Paris, Prague and beyond. She discovered that dozens of Saturday schools existed but lacked a unified platform, structured curriculum and digital tools. The teachers worked on enthusiasm alone, without support.",
+  founder_p3:"In 2025, Iryna launched Ukrainian for You — a project that unites a digital platform, a community of teachers and a network of partner schools. Her coaching background shapes the project's philosophy: it's not about grammar drills, it's about children feeling proud to speak Ukrainian. About identity. About belonging.",
+  founder_link:"Iryna's coaching website →",
+  testi_tag:"Parent reviews",testi_title:"What our <em>families say</em>",
+  t1:"We've been in Warsaw for two years. My daughter was forgetting words, felt embarrassed to speak Ukrainian. After three months with Ukrainian for You — she reads Shevchenko and writes to her grandmother!",
+  t1_sub:"mum of Darya, 8 — Warsaw 🇵🇱",
+  t2:"At first my son refused. Now he reminds me himself that his lesson is tomorrow. The interactive games are brilliant!",
+  t2_sub:"dad of Mykhailo, 10 — Berlin 🇩🇪",
+  t3:"We organised a Saturday school in Barcelona. Ukrainian for You gave us everything. I recommend this to every diaspora organisation!",
+  t3_sub:"school organiser — Barcelona 🇪🇸",
+  news_tag:"Community news",news_title:"The community <em>lives and acts</em>",news_sub:"Events, achievements and news from Ukrainian Saturday schools across Europe.",
+  news1_tag:"Competition",news1_h:"Winners of the 'Native Word' 2025 competition received their diplomas",news1_p:"Children from 15 countries participated in the pan-European Ukrainian poetry reading competition.",
+  news2_tag:"Community",news2_h:"First partner Saturday schools launched in Spain and France",news2_p:"Local organisers successfully launched Ukrainian Saturday schools with support from Ukrainian for You.",
+  news3_tag:"Event",news3_h:"Online Vyshyvanka Day — children from across Europe celebrated together",news3_p:"Children from Poland, Czechia, France and other countries wore their vyshyvankas and sang together.",
+  cta_tag:"Let's start",cta_h:"Enroll your child<br/><em>today</em>",cta_p:"Free consultation with our coordinator or a first lesson at no cost. Give your child the chance to keep Ukrainian in their heart.",
+  cta_btn1:"📅 Book a free consultation",cta_btn2:"View packages",cta_btn3:"💬 WhatsApp",
+  footer_desc:"Online platform for preserving and learning the Ukrainian language for children living abroad. Powered by Kalyna Education. Together we save the language, culture and identity.",
+  fcol1:"Learning",nav_platform:"Platform",nav_model:"Learning formats",
+  fcol2:"Community",nav_org:"Launch a school",fcol2_news:"News",
+  fcol3:"Contact",book_consult:"Book consultation",footer_terms:"Terms & payment",
+  founded:"Founded",
+  pay_method:"Payment method:",auto_sub:"Auto-subscription",auto_sub_s:"Card linked, monthly billing",
+  your_name:"Your name",child_name:"Child's name",child_age:"Child's age",country:"Country",
+  preferred_time:"Preferred time",select:"Select",other:"Other",
+  t_weekday:"Weekday evenings (17:00–20:00)",t_sat_am:"Saturday morning (10:00–13:00)",t_sat_pm:"Saturday afternoon (13:00–17:00)",t_sun:"Sunday (10:00–14:00)",
+  submit_btn:"Send application →",modal_note:"🔒 After your application, our coordinator will contact you within 24 hours. First lesson is free.",
+});
+
+// Spanish
+Object.assign(T.es,{
+  logo_sub:"Educación sin fronteras",
+  nav_how:"Cómo funciona",nav_pricing:"Paquetes",nav_sat:"Escuelas sabatinas",nav_partner:"Colaboración",nav_founder:"Sobre nosotros",nav_consult:"Consulta gratuita",
+  hero_tag:"Para niños ucranianos en Europa",
+  hero_h1:"Tu lengua materna —<br/><em>donde quiera que crezcas</em>",
+  hero_desc:"Ukrainian for You es una plataforma online de aprendizaje del ucraniano para niños de 6 a 14 años que viven en el extranjero. Clases en vivo con un profesor o aprendizaje autónomo, en cualquier momento y lugar.",
+  hero_btn1:"Elegir paquete →",hero_btn2:"📅 Consulta gratuita",hero_float:"Plataforma interactiva",
+  cbar_cal:"Reservar una consulta gratuita",
+  our_mission:"Nuestra misión",mission_title:"La lengua es <em>raíces</em>.<br/>Incluso lejos de casa.",
+  mission_desc:"Ukrainian for You nació en 2025 del dolor de los padres que vieron cómo sus hijos olvidaban poco a poco su lengua materna. Ayudamos a los niños que viven en el extranjero a mantenerse conectados con su idioma, cultura e identidad.",
+  v1h:"Preservar la identidad cultural",v1p:"Los niños recuerdan quiénes son a través del idioma, las canciones, los cuentos y las tradiciones de su pueblo.",
+  v2h:"Construir comunidad",v2p:"Los alumnos encuentran amigos en toda Europa — compañeros que entienden su camino y comparten sus raíces.",
+  v3h:"Educación de calidad sin fronteras",v3p:"Profesores certificados, programa del Ministerio de Educación de Ucrania adaptado para niños en otro entorno lingüístico.",
+  how_tag:"Cómo funciona",how_title:"Del registro a la <em>primera clase</em>",how_sub:"Simple y claro para padres y niños.",
+  s1h:"Reserva una consulta gratuita",s1p:"Una llamada de 20 minutos con nuestro coordinador vía Calendly. Identificamos las necesidades de tu hijo.",
+  s2h:"Evaluación del nivel",s2p:"Un test online de 15 minutos. Encontramos el grupo adecuado por edad y nivel.",
+  s3h:"Elige tu paquete",s3p:"Con un profesor en vivo o aprendizaje autónomo. Suscripción automática, cancela cuando quieras.",
+  s4h:"¡Empieza a aprender!",s4p:"Acceso inmediato a la plataforma Kalyna Education. ¡Primera clase gratuita!",
+  book_free_cal:"Reservar consulta gratuita",
+  platform_tag:"Plataforma Kalyna Education",platform_title:"Qué incluye <em>cada paquete</em>",
+  platform_sub:"Tras el pago obtienes acceso completo a la plataforma Kalyna Education (kalynaed.com) con la marca Ukrainian for You.",
+  f1h:"Clases online en vivo",f1p:"Clases de 55 minutos con profesor certificado. Grupos de hasta 8 alumnos.",
+  f2h:"Panel personal",f2p:"Todos los materiales, grabaciones de clases, tareas y progreso en un solo lugar.",
+  f3h:"Materiales interactivos",f3p:"Videolecciones, juegos, cuestionarios, ejercicios de lectura y escritura.",
+  f4h:"Tareas con retroalimentación",f4p:"Tareas estructuradas tras cada clase, revisadas por el profesor.",
+  f5h:"Seguimiento del progreso",f5p:"Los padres ven los logros del niño en tiempo real. Informes semanales por email.",
+  f6h:"Apoyo del profesor",f6p:"El profesor está disponible en el chat. Respuesta en 24 horas.",
+  f7h:"Eventos culturales",f7p:"Celebraciones online, concursos de poesía, veladas Shevchenko.",
+  f8h:"Certificados",f8p:"Certificado oficial de Ukrainian for You tras cada nivel.",
+  model_tag:"Formatos de aprendizaje",model_title:"Plataforma online + <em>escuela presencial</em>",
+  model_sub:"No todos los niños tienen ordenador. Por eso ofrecemos 4 formatos flexibles.",
+  mo1h:"Portátil del profesor + proyector (presencial)",mo1p:"El profesor usa la plataforma en su portátil conectado a un proyector o TV. Los niños participan verbalmente, sin necesidad de dispositivos.",
+  mo2h:"Aula informática del centro (híbrido)",mo2p:"Si la escuela tiene ordenadores o tablets, cada niño obtiene su propio acceso y realiza tareas interactivas de forma individual.",
+  mo3h:"Totalmente online (sin escuela)",mo3p:"¿No hay escuela sabatina en tu ciudad? El niño aprende online en casa con compañeros de toda Europa.",
+  mo4h:"La escuela tiene su propio profesor",mo4p:"Proporcionamos la plataforma, el programa, los materiales y el apoyo metodológico. El profesor usa nuestro contenido y ahorra horas de preparación.",
+  pricing_tag:"Paquetes y precios",pricing_title:"Elige el formato para <em>tu hijo</em>",pricing_sub:"Dos formatos de aprendizaje para cada ritmo y presupuesto. Primera clase gratuita.",
+  month:"mes",p1_lbl:"Paquete 1 — Aprendizaje autónomo",p1_name:"Aprendo yo solo",
+  p1_desc:"Como Duolingo pero en tu lengua materna — plataforma interactiva sin profesor en vivo.",
+  p1_calc:"Acceso ilimitado a la plataforma",p1_period:"o €120 / año (ahorro de €24)",
+  pf_platform:"Acceso completo a Kalyna Education",pf_video:"Videolecciones interactivas (a tu ritmo)",
+  pf_games:"Juegos, cuestionarios, ejercicios de lectura",pf_dashboard:"Panel personal del alumno",
+  pf_progress:"Seguimiento automático del progreso",pf_report:"Informe semanal para los padres",
+  pf_events:"Eventos culturales online",pf_cert:"Certificado de nivel",
+  try_free:"Prueba 7 días gratis →",p1_note:"✓ 7 días de prueba gratuita",
+  most_popular:"⭐ Más popular",
+  p2_lbl:"Paquete 2 — Con profesor en vivo",p2_name:"Aprendemos juntos",
+  p2_desc:"Clases grupales en vivo (55 min) + acceso completo a la plataforma. Comunicación real, motivación y progreso visible.",
+  p2_calc:"4 clases × 55 min = €11,25 por clase",p2_period:"o €450 / año (ahorro de €90)",
+  p2f1:"4 clases grupales en vivo/mes (55 min c/u)",p2f2:"Grupos de hasta 8 alumnos (por edad y nivel)",
+  p2f3:"Tareas revisadas por el profesor",p2f4:"Grabaciones de clases disponibles 30 días",
+  p2f5:"Informe semanal + análisis mensual",p2f6:"Chat con el profesor entre clases",
+  enroll_free:"Inscribirse — primera clase gratis →",p2_note:"✓ Sin compromiso • Cancela cuando quieras",
+  autosub_h:"🔄 Suscripción mensual automática",autosub_p:"Al inscribirse, se firma un acuerdo sencillo con los padres, se vincula la tarjeta una sola vez, y el cargo mensual se realiza automáticamente en la misma fecha cada mes. Cancela en cualquier momento desde el siguiente ciclo. Los pagos se procesan de forma segura a través de PayPal o Stripe.",
+  card:"Tarjeta: 4441 1110 4591 1561",
+  sat_tag:"Escuelas sabatinas",sat_title:"Ukrainian for You en las <em>escuelas sabatinas</em> de Europa",
+  sat_desc:"Colaboramos con las escuelas sabatinas organizadas por la diáspora ucraniana en toda Europa. Un profesor — recomendado por la escuela o encontrado con nuestra ayuda — imparte clases usando nuestra plataforma.",
+  sc1h:"Opciones flexibles de profesor",sc1p:"La escuela puede proporcionar su propio profesor, o nosotros ayudamos a encontrar un especialista cualificado — online o presencial.",
+  sc2h:"Clases sabatinas por grupo de edad",sc2p:"Clases de 55 min para 6–8 años, 9–11 años, 12–14 años. Horario acordado individualmente.",
+  sc3h:"¿Aún no hay escuela local?",sc3p:"Los niños se unen a grupos online en vivo con compañeros de otros países. También podemos ayudarte a abrir una escuela.",
+  countries_h:"🗺️ Países donde operamos:",sat_cta_h:"📞 ¿Tu hijo ya asiste a una escuela sabatina?",
+  sat_cta_p:"Inscríbete en el paquete 'Aprendemos juntos' — conectaremos tu escuela a nuestro programa sin coste adicional.",
+  write_wa:"Escribir por WhatsApp →",
+  partner_tag:"Consulta y colaboración",partner_title:"Para <em>familias</em> y <em>colaboradores</em>",
+  partner_sub:"Seas padre o director de escuela, tenemos una consulta personalizada para ti.",
+  pc1_h:"Para padres",pc1_p:"Una consulta gratuita de 20 minutos para entender el nivel, los objetivos y el mejor formato de aprendizaje de tu hijo.",
+  pc1_l1:"Hablamos del nivel de idioma del niño",pc1_l2:"Encontramos el paquete y formato adecuados",pc1_l3:"Conexión a un grupo en tu zona horaria",pc1_l4:"Respondemos todas tus preguntas",pc1_l5:"Primera clase completamente gratis",
+  free_consult_btn:"📅 Consulta gratuita para padres",
+  pc2_h:"Para escuelas sabatinas y socios",pc2_p:"¿Quieres lanzar un curso de ucraniano en tu escuela u organización de la diáspora? Ofrecemos un modelo completo de colaboración.",
+  pc2_l1:"Plataforma + programa + materiales incluidos",pc2_l2:"Ayuda para encontrar o formar a un profesor",pc2_l3:"Panel de administración para tu escuela",pc2_l4:"Descuentos para grupos desde 10 alumnos",pc2_l5:"Apoyo en la promoción entre la diáspora",pc2_l6:"¿No hay escuela ucraniana en tu ciudad? ¡Te ayudamos a crear una!",
+  partner_consult_btn:"📅 Consulta para colaboradores",
+  org_tag:"Nuevo servicio",org_title:"Te ayudamos a <em>abrir</em><br/>una escuela sabatina ucraniana",
+  org_desc:"¿Quieres abrir una escuela sabatina en tu ciudad pero no sabes por dónde empezar? Ukrainian for You ofrece apoyo completo.",
+  oi1:"Consulta — analizamos tu ciudad, comunidad y posibilidades.",oi2:"Ayuda para encontrar un local — escuela, centro cultural o sala comunitaria.",
+  oi3:"Selección o formación de un profesor — recomendado localmente o contactado por nosotros.",oi4:"Plataforma, programa, materiales y panel de administración — todo incluido.",
+  oi5:"Apoyo en la promoción entre la diáspora local y las asociaciones ucranianas.",oi6:"Si la apertura presencial no es posible — los niños se unen a nuestros grupos online en vivo con compañeros de toda Europa.",
+  org_cta:"📅 Hablar sobre abrir una escuela →",
+  founder_tag:"Sobre la fundadora",founder_title:"Creado con <em>corazón y experiencia</em>",
+  ftag1:"Coach certificada",ftag2:"Conexiones con la diáspora",ftag3:"Asociaciones ucranianas europeas",ftag4:"Patriota y educadora",
+  founder_badge:"Fundadora y Coach",
+  founder_name:"Iryna Lutsenko — fundadora, coach, defensora del idioma ucraniano",
+  founder_p1:"Ukrainian for You no nació en una oficina, sino del dolor real que Iryna presenció de primera mano. Viajando por Europa y hablando con familias ucranianas en Polonia, Alemania, España, Francia y el Reino Unido, escuchó la misma historia una y otra vez: los niños están olvidando el ucraniano.",
+  founder_p2:"Como coach certificada y educadora, Iryna comenzó a colaborar con asociaciones de la diáspora ucraniana en toda Europa — en Varsovia, Berlín, Madrid, París, Praga y más. Descubrió que existían decenas de escuelas sabatinas pero sin plataforma unificada, programa estructurado ni herramientas digitales.",
+  founder_p3:"En 2025, Iryna lanzó Ukrainian for You — un proyecto que une una plataforma digital, una comunidad de profesores y una red de escuelas asociadas. Su experiencia en coaching da forma a la filosofía del proyecto: no se trata de ejercicios de gramática, sino de que los niños se sientan orgullosos de hablar ucraniano. De identidad. De pertenencia.",
+  founder_link:"Sitio web de coaching de Iryna →",
+  testi_tag:"Opiniones de padres",testi_title:"Lo que dicen <em>nuestras familias</em>",
+  t1:"Llevamos dos años en Varsovia. Mi hija olvidaba palabras y se avergonzaba de hablar ucraniano. ¡Después de tres meses con Ukrainian for You lee poemas de Shevchenko y escribe a su abuela!",
+  t1_sub:"mamá de Darya, 8 años — Varsovia 🇵🇱",
+  t2:"Al principio mi hijo no quería. Ahora él mismo me recuerda que mañana tiene clase. ¡Los juegos interactivos son increíbles!",
+  t2_sub:"papá de Mykhailo, 10 años — Berlín 🇩🇪",
+  t3:"Organizamos una escuela sabatina en Barcelona. Ukrainian for You nos dio todo: la plataforma, materiales y apoyo del profesor. ¡Lo recomiendo a toda organización de la diáspora!",
+  t3_sub:"organizadora de escuela — Barcelona 🇪🇸",
+  news_tag:"Noticias de la comunidad",news_title:"La comunidad <em>vive y actúa</em>",news_sub:"Eventos, logros y noticias de las escuelas sabatinas ucranianas de Europa.",
+  news1_tag:"Concurso",news1_h:"Los ganadores del concurso 'Palabra Nativa' 2025 recibieron sus diplomas",news1_p:"Niños de 15 países participaron en el concurso paneuropeo de lectura de poesía ucraniana.",
+  news2_tag:"Comunidad",news2_h:"Las primeras escuelas sabatinas asociadas se inauguraron en España y Francia",news2_p:"Los organizadores locales lanzaron con éxito escuelas sabatinas ucranianas con el apoyo de Ukrainian for You.",
+  news3_tag:"Evento",news3_h:"Día de la Vyshyvanka online — niños de toda Europa celebraron juntos",news3_p:"Niños de Polonia, Chequia, Francia y otros países vistieron sus vyshyvankas y cantaron juntos en directo.",
+  cta_tag:"Empecemos",cta_h:"Inscribe a tu hijo<br/><em>hoy mismo</em>",cta_p:"Consulta gratuita con nuestro coordinador o una primera clase sin coste. Dale a tu hijo la oportunidad de mantener el ucraniano en su corazón.",
+  cta_btn1:"📅 Consulta gratuita",cta_btn2:"Ver paquetes",cta_btn3:"💬 WhatsApp",
+  footer_desc:"Plataforma online para preservar y aprender el idioma ucraniano para niños en el extranjero. Con tecnología de Kalyna Education. Juntos salvamos el idioma, la cultura y la identidad.",
+  fcol1:"Aprendizaje",nav_platform:"Plataforma",nav_model:"Formatos",
+  fcol2:"Comunidad",nav_org:"Abrir escuela",fcol2_news:"Noticias",
+  fcol3:"Contacto",book_consult:"Reservar consulta",footer_terms:"Términos y pago",
+  founded:"Fundado",
+  pay_method:"Método de pago:",auto_sub:"Suscripción automática",auto_sub_s:"Tarjeta vinculada, cobro mensual",
+  your_name:"Tu nombre",child_name:"Nombre del niño",child_age:"Edad del niño",country:"País",
+  preferred_time:"Horario preferido",select:"Seleccionar",other:"Otro",
+  t_weekday:"Tardes entre semana (17:00–20:00)",t_sat_am:"Sábado mañana (10:00–13:00)",t_sat_pm:"Sábado tarde (13:00–17:00)",t_sun:"Domingo (10:00–14:00)",
+  submit_btn:"Enviar solicitud →",modal_note:"🔒 Después de tu solicitud, nuestro coordinador se pondrá en contacto contigo en 24 horas. Primera clase gratuita.",
+});
+
+let currentLang = 'uk';
+function setLang(lang){
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.toggle('active',b.textContent.toLowerCase().startsWith(lang))});
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    const val = T[lang][key];
+    if(val!==undefined) el.innerHTML = val;
+  });
+}
+// Init
+document.querySelectorAll('.lang-btn').forEach((b,i)=>{if(i===0)b.classList.add('active');});
+setLang('uk');
+
+// Scroll reveal
+const obs = new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('vis')}),{threshold:.1});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+
+// Modal
+const plans={
+  solo:{plan:'Package 1',title:'Self-study',price:'€12 <span>/ month</span>'},
+  live:{plan:'Package 2 ⭐',title:'Learning together',price:'€45 <span>/ month</span>'}
+};
+function openModal(t){
+  const p=plans[t]||plans.live;
+  const lang=currentLang;
+  document.getElementById('m-plan').textContent = lang==='uk'?T.uk[t==='solo'?'p1_lbl':'p2_lbl']:lang==='es'?T.es[t==='solo'?'p1_lbl':'p2_lbl']:T.en[t==='solo'?'p1_lbl':'p2_lbl'];
+  document.getElementById('m-title').textContent = lang==='uk'?T.uk[t==='solo'?'p1_name':'p2_name']:lang==='es'?T.es[t==='solo'?'p1_name':'p2_name']:T.en[t==='solo'?'p1_name':'p2_name'];
+  document.getElementById('m-price').innerHTML = p.price;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow='';}
+function closeOnBg(e){if(e.target===document.getElementById('modal'))closeModal();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+function selPay(el){document.querySelectorAll('.payopt').forEach(x=>x.classList.remove('active'));el.classList.add('active');}
+function doSubmit(){
+  const btn=document.querySelector('.bsub');
+  const msg=currentLang==='uk'?'✅ Заявку прийнято! Зв\'яжемося протягом 24 год.':currentLang==='es'?'✅ ¡Solicitud recibida! Te contactaremos en 24h.':'✅ Application received! We\'ll contact you within 24h.';
+  btn.textContent=msg;btn.style.background='#22c55e';
+  setTimeout(()=>{closeModal();btn.textContent=T[currentLang]['submit_btn']||'Send →';btn.style.background='';},3000);
+}
+</script>
+</body>
+</html>
